@@ -8,7 +8,8 @@ import { fileURLToPath } from "node:url";
 const here = path.dirname(fileURLToPath(import.meta.url));
 const HTML = path.join(here, "..", "year-by-year.html");
 const CACHE = path.join(here, ".cache", "previews");
-const REPORT = path.join(here, "preview-report.json");
+const PL = process.argv[2];
+const REPORT = path.join(here, PL ? "preview-report." + path.basename(PL).replace(/.playlist.json$/, "") + ".json" : "preview-report.json");
 const UA = "one-shot-wonder-dev/0.1";
 fs.mkdirSync(CACHE, { recursive: true });
 
@@ -16,33 +17,29 @@ fs.mkdirSync(CACHE, { recursive: true });
 const html = fs.readFileSync(HTML, "utf8");
 const line = html.split(/\r?\n/).find(l => l.startsWith("const BUILTIN="));
 if (!line) throw new Error("BUILTIN not found");
-const BUILTIN = new Function("return " + line.slice("const BUILTIN=".length).replace(/;\s*$/, ""))();
+const BUILTIN = PL ? JSON.parse(fs.readFileSync(PL, "utf8")).songs : new Function("return " + line.slice("const BUILTIN=".length).replace(/;\s*$/, ""))();
 console.log("songs:", BUILTIN.length);
 
-// ---- helpers copied verbatim from the page (lines 233-247), pick() returns the candidate ----
+// ---- helpers copied from the page; keep them in step with it. pick() returns the candidate ----
 const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
-const cleanTitle=t=>(t.replace(/\([^)]*\)/g," ").replace(/^[.\s]+/,"").replace(/\s+/g," ").trim())||t;
+const cleanTitle=t=>(t.replace(/\([^)]*\)|\[[^\]]*\]/g," ").replace(/\s+-\s+.*$/,"").replace(/^[.\s]+/,"").replace(/\s+/g," ").trim())||t;
 const fullArtist=a=>a.split(/\s+(?:feat\.?|featuring)\s+/i)[0];
+const searchArtist=s=>s[4]?s[2].split(", ")[0]:fullArtist(s[2]);
 const firstArtist=a=>a.split(/,|&|\s+(?:and|feat\.?|featuring|with)\s+/i)[0].trim();
-function pick(cands,song){
-  const t=norm(cleanTitle(song[1])),a=norm(firstArtist(song[2]));let best=null,top=0;
-  for(const c of cands){
-    const n=norm(c.name),ar=norm(c.artist);let sc=0;
-    if(a&&ar.includes(a))sc+=2;
-    if(n.startsWith(t))sc+=2;else if(n.includes(t))sc+=1;
-    if(/karaoke|tribute|made famous|cover version|instrumental|\blive\b|re-?recorded/i.test(c.name+" "+c.artist)&&!/live/i.test(song[1]))sc-=2;
-    if(sc>top){top=sc;best=c}
-  }
-  return top>=3?best:null;
-}
-// same scoring, exposed for reporting candidates
+const noThe=s=>norm(s).replace(/^the/,"");
+const OTHER=/karaoke|tribute|made famous|cover version|originally performed|instrumental|\blive\b|re-?recorded|remix|\bmix\b|\bdub\b|rework|refix|acoustic|\bdemo\b|a cappella|stripped|itunes originals/i, FAKE=/karaoke|tribute|made famous|originally performed/i, CUT=/\b(?:edit|edited|version|extended|alternate|radio)\b/i;
 function score(c,song){
-  const t=norm(cleanTitle(song[1])),a=norm(firstArtist(song[2]));
-  const n=norm(c.name),ar=norm(c.artist);let sc=0;
-  if(a&&ar.includes(a))sc+=2;
-  if(n.startsWith(t))sc+=2;else if(n.includes(t))sc+=1;
-  if(/karaoke|tribute|made famous|cover version|instrumental|\blive\b|re-?recorded/i.test(c.name+" "+c.artist)&&!/live/i.test(song[1]))sc-=2;
+  const t=norm(cleanTitle(song[1])),t2=norm(song[1]),a=noThe(firstArtist(song[2]));
+  const n=norm(cleanTitle(c.name)),n2=norm(c.name),ar=noThe(c.artist),both=c.name+" "+(c.album||"");let sc=0;
+  if(a&&ar.startsWith(a))sc+=2;else if(a&&ar.includes(a)&&/[,&]|feat/i.test(c.artist))sc+=1;
+  if(n===t||n2===t2)sc+=3;else if(n.endsWith(t))sc+=2;else if(n.includes(t))sc+=1;
+  if(FAKE.test(c.artist)||(OTHER.test(both)&&!OTHER.test(song[1])))sc-=2;else if(CUT.test(c.name)&&!CUT.test(song[1]))sc-=1;
   return sc;
+}
+function pick(cands,song){
+  let best=null,top=0;
+  for(const c of cands){const sc=score(c,song);if(sc>top){top=sc;best=c}}
+  return top>=4?best:null;
 }
 
 // ---- http with cache + rate limiting ----
@@ -101,7 +98,7 @@ const deezerCand = r => ({ name: r.title || "", artist: (r.artist && r.artist.na
 const notes = { itunesShapes: new Set(), deezerErrors: [], itunesErrors: [], jsonpPrefixes: new Set(), contentTypes: new Set(), noPreviewCount: 0, redirects: [] };
 
 async function lookup(song) {
-  const term = encodeURIComponent(cleanTitle(song[1]) + " " + fullArtist(song[2]));
+  const term = encodeURIComponent(cleanTitle(song[1]) + " " + searchArtist(song));
   const out = { service: "none", match: null, candidates: { itunes: [], deezer: [] }, errors: [] };
 
   const iu = "https://itunes.apple.com/search?media=music&entity=song&limit=10&term=" + term + "&callback=" + CB;
@@ -202,7 +199,7 @@ for (let i = 0; i < BUILTIN.length; i++) {
     fs.writeFileSync(REPORT, JSON.stringify({ aborted: e.message, stats, doneSongs: i, results }, null, 1));
     process.exit(2);
   }
-  const rec = { index: i, year: song[0], title: song[1], artist: song[2], genre: song[3], term: cleanTitle(song[1]) + " " + fullArtist(song[2]), service: o.service, errors: o.errors };
+  const rec = { index: i, year: song[0], title: song[1], artist: song[2], genre: song[3], term: cleanTitle(song[1]) + " " + searchArtist(song), service: o.service, errors: o.errors };
   if (o.match) {
     rec.match = { name: o.match.name, artist: o.match.artist, album: o.match.album, durationMs: o.match.durationMs, previewUrl: o.match.val };
     rec.preview = await checkUrl(o.match.val);

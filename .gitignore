@@ -4,3 +4,4 @@ tools/.cache/
 *.local
 .playwright-mcp/
 tools/hooks-report.json
+tools/preview-report*.json

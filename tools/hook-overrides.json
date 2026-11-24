@@ -1,318 +1,437 @@
 {
  "1thing|amerie": {
   "lineMs": 48440,
-  "note": "Title chorus starts here; the na-na intro chant is not the hook."
+  "note": "Title chorus starts here; the na-na intro chant is not the hook.",
+  "id": 840631
  },
  "99luftballons|nena": {
   "lineMs": 70510,
-  "note": "Title-line chorus first appears here; the opening is verse."
+  "note": "Title-line chorus first appears here; the opening is verse.",
+  "id": 4679608
  },
  "aintnomountainhighenough|dianaross": {
   "lineMs": 159490,
-  "note": "Title chorus first appears here; auto pick skipped its first four lines."
+  "note": "Title chorus first appears here; auto pick skipped its first four lines.",
+  "id": 4334068
  },
  "allthesmallthings|blink182": {
   "lineMs": 39750,
-  "note": "Chorus begins at 'Say it ain't so', one line before the chosen line."
+  "note": "Chorus begins at 'Say it ain't so', one line before the chosen line.",
+  "id": 560452
  },
  "americanidiot|greenday": {
   "lineMs": 10510,
-  "note": "Title chorus is the opening line, marked line is the following section."
+  "note": "Title chorus is the opening line, marked line is the following section.",
+  "id": 13247
+ },
+ "analog|strungout": {
+  "lineMs": 87460,
+  "note": "Chorus starts at 'We are frequency' and runs into the 'other side' lines.",
+  "id": 13037844
  },
  "anarchyintheuk|sexpistols": {
   "lineMs": 28240,
-  "note": "Repeated 'I wanna be anarchy' line ends each verse and is the sing-along hook."
+  "note": "Repeated 'I wanna be anarchy' line ends each verse and is the sing-along hook.",
+  "id": 2347694
  },
  "anotherbrickinthewallpart2|pinkfloyd": {
   "lineMs": 47800,
-  "note": "Title line is the real hook; auto pick was the verse tag."
+  "note": "Title line is the real hook; auto pick was the verse tag.",
+  "id": 5654203
+ },
+ "ascensionism|sleeptoken": {
+  "lineMs": 164680,
+  "note": "Signature repeated 'Diamonds in the trees' refrain begins here; marked line is just a short bridge line.",
+  "id": 2288580
  },
  "babaoriley|thewho": {
   "lineMs": 120520,
-  "note": "Sing-along 'teenage wasteland' section starts here."
+  "note": "Sing-along 'teenage wasteland' section starts here.",
+  "id": 4688979
  },
  "babygotback|sirmixalot": {
   "lineMs": 31280,
-  "note": "Famous hook verse starts here, well before the marked line."
+  "note": "Famous hook verse starts here, well before the marked line.",
+  "id": 2574686
  },
  "badhabit|stevelacy": {
   "lineMs": 0,
-  "note": "Signature hook phrase begins at the first line."
+  "note": "Signature hook phrase begins at the first line.",
+  "id": 348
  },
  "bigyellowtaxi|jonimitchell": {
   "lineMs": 11000,
-  "note": "Chorus starts at the first paradise line, marked line is mid-chorus."
+  "note": "Chorus starts at the first paradise line, marked line is mid-chorus.",
+  "id": 1674497
  },
  "birdsofafeather|billieeilish": {
   "lineMs": 41850,
-  "note": "Title line starts the chorus; marked line is mid-chorus."
+  "note": "Title line starts the chorus; marked line is mid-chorus.",
+  "id": 9181702
  },
  "bittersweetsymphonyremastered2016|theverve": {
   "lineMs": 65950,
-  "note": "Title line is the chorus start."
+  "note": "Title line is the chorus start.",
+  "id": 124739
  },
  "bittersweetsymphony|theverve": {
   "lineMs": null,
-  "note": "Lyric timing disagrees by 30 s with the other record of the same recording; not trusted."
+  "note": "Lyric timing disagrees by 30 s with the other record of the same recording; not trusted.",
+  "id": 3557746
  },
  "bluemonday|neworder": {
   "lineMs": 129680,
-  "note": "Famous vocal hook opens the first vocal section; chosen line is its second half."
+  "note": "Famous vocal hook opens the first vocal section; chosen line is its second half.",
+  "id": 4691810
+ },
+ "circlewithme|spiritbox": {
+  "lineMs": 65880,
+  "note": "Repeated 'weight of a martyr / could all be yours' chorus appears earlier than the late title bridge.",
+  "id": 1157420
  },
  "closer|neyo": {
   "lineMs": 52710,
-  "note": "Title 'Come closer' starts the chorus before the marked line."
+  "note": "Title 'Come closer' starts the chorus before the marked line.",
+  "id": 3511119
  },
  "couldyoubeloved|bobmarleyandthewailers": {
   "lineMs": 15660,
-  "note": "Title hook appears first at the start."
+  "note": "Title hook appears first at the start.",
+  "id": 17306504
  },
  "dearmariacountmein|alltimelow": {
   "lineMs": 910,
-  "note": "Chorus block begins at 'I got your picture', the marked line is its second line."
+  "note": "Chorus block begins at 'I got your picture', the marked line is its second line.",
+  "id": 561802
  },
  "doiwannaknow|arcticmonkeys": {
   "lineMs": 72820,
-  "note": "Chorus starts at the title question; auto pick was mid-chorus."
+  "note": "Chorus starts at the title question; auto pick was mid-chorus.",
+  "id": 3036773
  },
  "dontfearthereaper|blueoystercult": {
   "lineMs": 26970,
-  "note": "Chorus starts at the title line, marked line is its last line."
+  "note": "Chorus starts at the title line, marked line is its last line.",
+  "id": 16837565
  },
  "dropsofjupitertellme|train": {
   "lineMs": 48760,
-  "note": "First chorus is much earlier than the na-na outro."
+  "note": "First chorus is much earlier than the na-na outro.",
+  "id": 680086
+ },
+ "drugs|fallinginreverse": {
+  "lineMs": 63800,
+  "note": "First full chorus starts here, well before the late occurrence.",
+  "id": 2037322
  },
  "earfquake|tylerthecreator": {
   "lineMs": 22990,
-  "note": "Chorus begins one line earlier."
+  "note": "Chorus begins one line earlier.",
+  "id": 5184370
  },
  "everlong|foofighters": {
   "lineMs": 88990,
-  "note": "Chorus begins at And I wonder; auto pick was the second line."
+  "note": "Chorus begins at And I wonder; auto pick was the second line.",
+  "id": 2848389
  },
  "everybreathyoutake|thepolice": {
   "lineMs": 15300,
-  "note": "Title line opens the chorus; marked line is mid-chorus."
+  "note": "Title line opens the chorus; marked line is mid-chorus.",
+  "id": 5266238
  },
  "facedown|theredjumpsuitapparatus": {
   "lineMs": 101700,
-  "note": "Marked lines are the pre-chorus; the title chorus is Face down in the dirt."
+  "note": "Marked lines are the pre-chorus; the title chorus is Face down in the dirt.",
+  "id": 1196669
  },
  "fireflies|owlcity": {
   "lineMs": 21460,
-  "note": "Fireflies chorus is the opening stanza, marked is verse-like."
+  "note": "Fireflies chorus is the opening stanza, marked is verse-like.",
+  "id": 3653309
  },
  "flashdancewhatafeelingradioedit|irenecara": {
   "lineMs": 69560,
-  "note": "Chorus starts at What a feeling; the marked line is its second half."
+  "note": "Chorus starts at What a feeling; the marked line is its second half.",
+  "id": 3778435
  },
  "freebird|lynyrdskynyrd": {
   "lineMs": 118140,
-  "note": "Free as a bird is the hook, marked line is verse."
+  "note": "Free as a bird is the hook, marked line is verse.",
+  "id": 7227667
  },
  "gangnamstyle|psy": {
   "lineMs": 66290,
-  "note": "Title chorus begins here; marked line is the second half."
+  "note": "Title chorus begins here; marked line is the second half.",
+  "id": 2486722
+ },
+ "gethsemane|sleeptoken": {
+  "lineMs": 159310,
+  "note": "Earlier repeated sung hook; marked line is a very late outro.",
+  "id": 20951386
  },
  "ghosttown|thespecials": {
   "lineMs": 38570,
-  "note": "Same hook line appears at the first vocal, much earlier."
+  "note": "Same hook line appears at the first vocal, much earlier.",
+  "id": 1006075
  },
  "girlsgirlsgirls|motleycrue": {
   "lineMs": 43560,
-  "note": "Title chorus first appears here, marked line is late."
+  "note": "Title chorus first appears here, marked line is late.",
+  "id": 135718
  },
  "groovejetifthisaintlove|spillersophieellisbextor": {
   "lineMs": 40690,
-  "note": "Hook starts at If this ain't love, not its answer line."
+  "note": "Hook starts at If this ain't love, not its answer line.",
+  "id": 9531328
  },
  "happierthanever|billieeilish": {
   "lineMs": 4900,
-  "note": "Opening 'happier than ever' passage is the title hook, reprised later."
+  "note": "Opening 'happier than ever' passage is the title hook, reprised later.",
+  "id": 348677
  },
  "happy|pharrellwilliams": {
   "lineMs": 23750,
-  "note": "Clap along chorus first appears here, marked line is a late bridge."
+  "note": "Clap along chorus first appears here, marked line is a late bridge.",
+  "id": 3654754
  },
  "harderbetterfasterstronger|daftpunk": {
   "lineMs": 51480,
-  "note": "The hook phrase first appears here; marked line is a later repeat."
+  "note": "The hook phrase first appears here; marked line is a later repeat.",
+  "id": 245312
  },
  "herewithme|d4vd": {
   "lineMs": 57920,
-  "note": "Chorus seems to begin here ('I don't care how long it takes'); unsure."
+  "note": "Chorus seems to begin here ('I don't care how long it takes'); unsure.",
+  "id": 1251782
  },
  "hungrylikethewolf2009remaster|duranduran": {
   "lineMs": 56160,
-  "note": "First chorus begins here, earlier than the marked repeat."
+  "note": "First chorus begins here, earlier than the marked repeat.",
+  "id": 3810569
  },
  "igottafeeling|theblackeyedpeas": {
   "lineMs": 28820,
-  "note": "Chorus begins at I got a feeling, which holds the title."
+  "note": "Chorus begins at I got a feeling, which holds the title.",
+  "id": 4697479
  },
  "itfeelssogoodradioedit|sonique": {
   "lineMs": 33580,
-  "note": "Title chorus starts here; marked line is its last line."
+  "note": "Title chorus starts here; marked line is its last line.",
+  "id": 3660245
  },
  "itwasntme|shaggyfeatrikrok": {
   "lineMs": 61180,
-  "note": "Real chorus; auto pick was the verse."
+  "note": "Real chorus; auto pick was the verse.",
+  "id": 1187280
  },
  "jekyllhyde|primecircle": {
   "lineMs": 29260,
-  "note": "Title chorus begins here."
+  "note": "Title chorus begins here.",
+  "id": 2053159
  },
  "killbill|sza": {
   "lineMs": 31900,
-  "note": "The I might kill my ex section is the hook, not the verse line marked."
+  "note": "The I might kill my ex section is the hook, not the verse line marked.",
+  "id": 965677
  },
  "kissmemore|dojacatfeaturingsza": {
   "lineMs": 24890,
-  "note": "Title hook first appears here; chosen line is a later post-chorus."
+  "note": "Title hook first appears here; chosen line is a later post-chorus.",
+  "id": 14514753
+ },
+ "laidtorest|lambofgod": {
+  "lineMs": 64880,
+  "note": "Chorus begins with 'Smother another failure / Lay this to rest' with the title.",
+  "id": 961520
  },
  "lambada|kaoma": {
   "lineMs": 33510,
-  "note": "Sing-along refrain first appears here."
+  "note": "Sing-along refrain first appears here.",
+  "id": 2337161
  },
  "lamourtoujours|gigidagostino": {
   "lineMs": 55470,
-  "note": "Chorus block starts one line earlier."
+  "note": "Chorus block starts one line earlier.",
+  "id": 3992017
  },
  "landslide|fleetwoodmac": {
   "lineMs": 61820,
-  "note": "Chorus is the changin' stanza, earlier than marked."
+  "note": "Chorus is the changin' stanza, earlier than marked.",
+  "id": 2511849
  },
  "maneater|darylhalljohnoates": {
   "lineMs": 87660,
-  "note": "First chorus is at 1:27, long before the chosen late repeat."
+  "note": "First chorus is at 1:27, long before the chosen late repeat.",
+  "id": 993
  },
  "maniacfromflashdance|michaelsembello": {
   "lineMs": 60380,
-  "note": "First chorus is much earlier than the marked line."
+  "note": "First chorus is much earlier than the marked line.",
+  "id": 996107
  },
  "midnightcity|m83": {
   "lineMs": 37680,
-  "note": "Same hook words appear first here, earlier than the marked one."
+  "note": "Same hook words appear first here, earlier than the marked one.",
+  "id": 1618892
  },
  "mirrors|justintimberlake": {
   "lineMs": 73260,
-  "note": "Chorus with the title idea; auto pick was pre-chorus."
+  "note": "Chorus with the title idea; auto pick was pre-chorus.",
+  "id": 3661587
  },
  "missing2013remaster|everythingbutthegirl": {
   "lineMs": 30130,
-  "note": "Chorus starts at And I miss you; marked line is the pre-chorus."
+  "note": "Chorus starts at And I miss you; marked line is the pre-chorus.",
+  "id": 398265
  },
  "moneyfornothing|direstraits": {
   "lineMs": 124370,
-  "note": "First 'money for nothin'' chorus; chosen line is a later verse-like section."
+  "note": "First 'money for nothin'' chorus; chosen line is a later verse-like section.",
+  "id": 4231215
  },
  "orinocoflow|enya": {
   "lineMs": 17080,
-  "note": "First hook with the title 'Orinoco flow'."
+  "note": "First hook with the title 'Orinoco flow'.",
+  "id": 2257226
  },
  "partyrockanthem|lmfaofeaturinglaurenbennettandgoonrock": {
   "lineMs": 30620,
-  "note": "First title chorus; auto pick was late."
+  "note": "First title chorus; auto pick was late.",
+  "id": 3160824
  },
  "photograph2020remaster|nickelback": {
   "lineMs": 58730,
-  "note": "Marked line is verse; this is the chorus."
+  "note": "Marked line is verse; this is the chorus.",
+  "id": 811983
  },
  "poison|bellbivdevoe": {
   "lineMs": 55730,
-  "note": "First chorus is the drivin' me out of my mind section, far earlier than the late chant."
+  "note": "First chorus is the drivin' me out of my mind section, far earlier than the late chant.",
+  "id": 3401814
  },
  "rhythmofthenight|debarge": {
   "lineMs": 51080,
-  "note": "Title chorus; auto pick was the verse end."
+  "note": "Title chorus; auto pick was the verse end.",
+  "id": 3639795
+ },
+ "run|nell": {
+  "lineMs": 47000,
+  "note": "Repeated refrain, starts the chorus.",
+  "id": 10841765
  },
  "sayitright|nellyfurtado": {
   "lineMs": 56860,
-  "note": "Chorus first occurrence is earlier."
+  "note": "Chorus first occurrence is earlier.",
+  "id": 3655070
  },
  "selfcontrol|laurabranigan": {
   "lineMs": 54470,
-  "note": "Title chorus first appears at 0:54, not at the late outro."
+  "note": "Title chorus first appears at 0:54, not at the late outro.",
+  "id": 1022445
  },
  "sevennationarmy|thewhitestripes": {
   "lineMs": 16220,
-  "note": "First sung line contains the title idea and is the signature part."
+  "note": "First sung line contains the title idea and is the signature part.",
+  "id": 798826
  },
  "sexyback|justintimberlake": {
   "lineMs": 15780,
-  "note": "Title hook line opens the song's first section."
+  "note": "Title hook line opens the song's first section.",
+  "id": 550235
  },
  "shouldistayorshouldigo|theclash": {
   "lineMs": 15430,
-  "note": "Title chorus appears first near the start."
+  "note": "Title chorus appears first near the start.",
+  "id": 2473074
  },
  "sickandtired|anastacia": {
   "lineMs": 48750,
-  "note": "Title line is the chorus start; marked line comes after it."
+  "note": "Title line is the chorus start; marked line comes after it.",
+  "id": 686389
  },
  "skyfall|adele": {
   "lineMs": 82810,
-  "note": "Chorus starts here, marked line is its last line."
+  "note": "Chorus starts here, marked line is its last line.",
+  "id": 2218097
  },
  "slowdancinginthedark|joji": {
   "lineMs": 45490,
-  "note": "Title line starts here; marked line looks like a pre-chorus (unsure)."
+  "note": "Title line starts here; marked line looks like a pre-chorus (unsure).",
+  "id": 66256
  },
  "smellsliketeenspirit|nirvana": {
   "lineMs": 65380,
-  "note": "Chorus starts here; Hello how low is pre-chorus."
+  "note": "Chorus starts here; Hello how low is pre-chorus.",
+  "id": 3675942
  },
  "somebodytolove|queen": {
   "lineMs": 45620,
-  "note": "First chorus with title phrase is earlier."
+  "note": "First chorus with title phrase is earlier.",
+  "id": 4930469
  },
  "sultansofswing|direstraits": {
   "lineMs": 143940,
-  "note": "Title refrain first appears here."
+  "note": "Title refrain first appears here.",
+  "id": 5328042
  },
  "tarzanboy|baltimora": {
   "lineMs": 91690,
-  "note": "Auto pick timings are bunched; Night to night is the sung chorus."
+  "note": "Auto pick timings are bunched; Night to night is the sung chorus.",
+  "id": 3643920
  },
  "thefinalcountdown|europe": {
   "lineMs": 117380,
-  "note": "Title chorus first appears here, much earlier than the marked outro."
+  "note": "Title chorus first appears here, much earlier than the marked outro.",
+  "id": 7253146
  },
  "thelessiknowthebetter|tameimpala": {
   "lineMs": 53550,
-  "note": "Title line is the clear hook."
+  "note": "Title line is the clear hook.",
+  "id": 2943857
  },
  "thepoweroflove|hueylewisthenews": {
   "lineMs": 73920,
-  "note": "First sung-along chorus is earlier than the marked line."
+  "note": "First sung-along chorus is earlier than the marked line.",
+  "id": 851228
  },
  "thunderstruck|acdc": {
   "lineMs": 93210,
-  "note": "Earlier chorus section leading to thunderstruck."
+  "note": "Earlier chorus section leading to thunderstruck.",
+  "id": 3814674
  },
  "uptownfunk|markronsonfeaturingbrunomars": {
   "lineMs": 50180,
-  "note": "First chorus is much earlier than marked outro."
+  "note": "First chorus is much earlier than marked outro.",
+  "id": 3746036
  },
  "uptowngirlradioedit|westlife": {
   "lineMs": 8460,
-  "note": "Song opens with its title hook; the marked line is a late outro."
+  "note": "Song opens with its title hook; the marked line is a late outro.",
+  "id": 3667100
+ },
+ "watchtheworldburn|fallinginreverse": {
+  "lineMs": 113620,
+  "note": "Sung chorus (repeats at 2:11) after the rap verses.",
+  "id": 2147406
  },
  "windofchange|scorpions": {
   "lineMs": 99720,
-  "note": "First occurrence of the Take me chorus; auto pick was late."
+  "note": "First occurrence of the Take me chorus; auto pick was late.",
+  "id": 5122009
  },
  "wishyouwerehere|pinkfloyd": {
   "lineMs": 195910,
-  "note": "Only title line in the lyrics."
+  "note": "Only title line in the lyrics.",
+  "id": 7124053
  },
  "yoursong|eltonjohn": {
   "lineMs": 72420,
-  "note": "Chorus begins here; marked line is mid-chorus."
+  "note": "Chorus begins here; marked line is mid-chorus.",
+  "id": 7227680
  },
  "youspinmeroundlikearecord|deadoralive": {
   "lineMs": 61490,
-  "note": "Title chorus; auto pick was the verse."
+  "note": "Title chorus; auto pick was the verse.",
+  "id": 7898241
  }
 }

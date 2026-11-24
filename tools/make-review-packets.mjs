@@ -14,11 +14,14 @@ for (const f of fs.readdirSync(CACHE)) {
   for (const r of Array.isArray(body) ? body : body ? [body] : []) if (r && r.id && r.syncedLyrics) byId.set(r.id, r);
 }
 const ts = ms => Math.floor(ms / 60000) + ":" + String(Math.floor(ms / 1000) % 60).padStart(2, "0");
+const only = process.argv[3]; // optional: only songs from a source whose name contains this text
 const picks = [];
 for (const [key, v] of Object.entries(report)) {
   const reasons = (v.reviewReasons || []).filter(r => !r.startsWith("duration unknown"));
   if (v.status === "no-repeat") reasons.push("no hook found: no clear repeat");
   if (!reasons.length) continue;
+  if (only && !(v.sources || []).some(x => x.includes(only))) continue;
+  if (v.override) continue; // already reviewed
   const rec = v.lrclib && byId.get(v.lrclib.id);
   if (!rec) continue;
   picks.push({ key, v, reasons, rec });
@@ -33,6 +36,6 @@ for (let b = 0; b < n; b++) {
     out += v.hook ? `Chosen chorus start: lineMs=${v.hook.blockStartMs} (${ts(v.hook.blockStartMs)}) — ${v.reason}\n` : "Chosen chorus start: none\n";
     for (const l of parseLrc(rec.syncedLyrics)) out += `${l.ms === v.hook?.blockStartMs ? ">>" : "  "} ${l.ms}\t${ts(l.ms)}\t${l.text}\n`;
   });
-  fs.writeFileSync(path.join(OUT, `batch-${b + 1}.txt`), out);
+  fs.writeFileSync(path.join(OUT, `${only ? "extra-" : "batch-"}${b + 1}.txt`), out);
 }
 console.log(picks.length + " songs in " + n + " batches -> " + OUT);

@@ -52,6 +52,9 @@ function loadSongs() {
 // ---- iTunes duration hints from preview-report.json (structure unknown: search generically) ----
 function loadHints() {
   const hints = new Map();
+  // Off unless asked for: the store preview is often a different cut from the one Spotify plays,
+  // and the reviewed corrections were made against the recordings chosen without it.
+  if (!process.argv.includes("--itunes-hints")) return new Map();
   const p = path.join(here, "preview-report.json");
   if (!fs.existsSync(p)) return hints;
   let data; try { data = JSON.parse(fs.readFileSync(p, "utf8")); } catch { return hints; }
@@ -233,16 +236,23 @@ async function main() {
     // Reviewed corrections: tools/hook-overrides.json is { key: { lineMs: <ms of a real lyric line> | null, note } }.
     // lineMs must be the timestamp of a line in the chosen recording; null drops the hook.
     const ovFile = path.join(OUT_DIR, "hook-overrides.json");
+    // Hooks set by ear in the app ("Save my hooks as a file"), dropped into tools/input/ as *.hooks.json.
+    // These are exact start positions and win over everything; dur 0 tells the page not to check the length.
+    const manual = {};
+    for (const f of fs.readdirSync(path.join(here, "input")).filter(f => f.endsWith(".hooks.json")).sort())
+      Object.assign(manual, JSON.parse(fs.readFileSync(path.join(here, "input", f), "utf8")).hooks || {});
     if (fs.existsSync(ovFile)) {
       for (const [key, ov] of Object.entries(JSON.parse(fs.readFileSync(ovFile, "utf8")))) {
         const rep = report[key];
         if (!rep) { console.error("override for unknown song: " + key); continue; }
+        if (ov.id && rep.lrclib && rep.lrclib.id !== ov.id) { console.error("override skipped, recording changed: " + key); continue; }
         if (ov.lineMs == null) { delete hooks[key]; rep.override = { dropped: true, note: ov.note }; continue; }
         if (!rep.durationMs) { console.error("override for a song with no recording: " + key); continue; }
         hooks[key] = { ms: Math.max(0, ov.lineMs - 1500), dur: rep.durationMs, conf: "reviewed", why: ov.note || "set in review" };
         rep.override = { lineMs: ov.lineMs, note: ov.note };
       }
     }
+    for (const [key, ms] of Object.entries(manual)) if (typeof ms === "number" && ms >= 0) hooks[key] = { ms: Math.round(ms), dur: 0, conf: "manual", why: "set by ear in the app" };
     fs.writeFileSync(path.join(OUT_DIR, "hooks.json"), JSON.stringify(sortObj(hooks), null, 2) + "\n");
     fs.writeFileSync(path.join(OUT_DIR, "hooks-report.json"), JSON.stringify(sortObj(report), null, 2) + "\n");
   } else {

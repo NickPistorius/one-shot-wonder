@@ -1,0 +1,4430 @@
+{
+  "1999|prince": {
+    "ms": 65930,
+    "dur": 217000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "1thing|amerie": {
+    "ms": 19110,
+    "dur": 239000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "21guns|greenday": {
+    "ms": 63760,
+    "dur": 321000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title"
+  },
+  "21questions|50cent": {
+    "ms": 31260,
+    "dur": 224000,
+    "conf": "medium",
+    "why": "6-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "99luftballons|nena": {
+    "ms": 5020,
+    "dur": 231000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "abc|thejackson5": {
+    "ms": 24150,
+    "dur": 178000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "aceofspades|motorhead": {
+    "ms": 36150,
+    "dur": 167000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "aerials|systemofadown": {
+    "ms": 86870,
+    "dur": 235000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "africa|toto": {
+    "ms": 85860,
+    "dur": 295000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "aintnomountainhighenough|dianaross": {
+    "ms": 165880,
+    "dur": 215000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "aintnosunshine|billwithers": {
+    "ms": 36710,
+    "dur": 124000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "airplanesfeathayleywilliamsofparamore|bobhayleywilliams": {
+    "ms": 7650,
+    "dur": 180480,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "airplanes|bobfeathayleywilliams": {
+    "ms": 7500,
+    "dur": 181000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "akindofmagicremastered2011|queen": {
+    "ms": 0,
+    "dur": 265000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "alittlelessconversationjxlradioeditremix|elvispresleyjunkiexl": {
+    "ms": 24040,
+    "dur": 212000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "alittlerespect2009remaster|erasure": {
+    "ms": 40870,
+    "dur": 213000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "allnightlongallnight|lionelrichie": {
+    "ms": 60360,
+    "dur": 260000,
+    "conf": "high",
+    "why": "3-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "allornothing|otown": {
+    "ms": 58490,
+    "dur": 249000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "allrise|blue": {
+    "ms": 62980,
+    "dur": 224000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "allstar|smashmouth": {
+    "ms": 36270,
+    "dur": 200000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "allthatshewants|aceofbase": {
+    "ms": 49880,
+    "dur": 211000,
+    "conf": "high",
+    "why": "8-line block repeats 12 times and contains the title"
+  },
+  "allthesmallthings|blink182": {
+    "ms": 40120,
+    "dur": 168000,
+    "conf": "low",
+    "why": "7-line block repeats 4 times but does not contain the title"
+  },
+  "allthethingsshesaid|tatu": {
+    "ms": 10410,
+    "dur": 216000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title"
+  },
+  "alwaysonmymind|petshopboys": {
+    "ms": 54870,
+    "dur": 235000,
+    "conf": "high",
+    "why": "2-line block repeats 6 times and contains the title"
+  },
+  "americanidiot|greenday": {
+    "ms": 29740,
+    "dur": 176000,
+    "conf": "low",
+    "why": "6-line block repeats 3 times but does not contain the title"
+  },
+  "angels|robbiewilliams": {
+    "ms": 53530,
+    "dur": 265000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "anotherbrickinthewallpart2|pinkfloyd": {
+    "ms": 37640,
+    "dur": 241000,
+    "conf": "low",
+    "why": "3-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "anotheronebitesthedust|queen": {
+    "ms": 40060,
+    "dur": 216000,
+    "conf": "high",
+    "why": "6-line block repeats 5 times and contains the title"
+  },
+  "anthemparttwo|blink182": {
+    "ms": 92390,
+    "dur": 227000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "anyoneofusstupidmistake|garethgates": {
+    "ms": 34830,
+    "dur": 229000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "anywayyouwantit|journey": {
+    "ms": 0,
+    "dur": 202000,
+    "conf": "high",
+    "why": "3-line block repeats 11 times and contains the title"
+  },
+  "apologize|timbalandfeatonerepublic": {
+    "ms": 46880,
+    "dur": 185000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "apologize|timbalandonerepublic": {
+    "ms": 46880,
+    "dur": 185000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "areyouthatsomebody|aaliyah": {
+    "ms": 58690,
+    "dur": 266000,
+    "conf": "medium",
+    "why": "8-line block repeats 5 times; title never appears in the lyrics"
+  },
+  "armyourself|zebragiraffe": {
+    "ms": 56270,
+    "dur": 193000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "aroundtheworldlalalalala|atouchofclass": {
+    "ms": 22320,
+    "dur": 215000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "asitwas|harrystyles": {
+    "ms": 35950,
+    "dur": 167000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "aslongasiamhere|primecircle": {
+    "ms": 59730,
+    "dur": 211548,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "athousandmiles|vanessacarlton": {
+    "ms": 49330,
+    "dur": 237000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "athousandyears|christinaperri": {
+    "ms": 68280,
+    "dur": 285000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "attack|thirtysecondstomars": {
+    "ms": 31600,
+    "dur": 188000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "babygotback|sirmixalot": {
+    "ms": 153360,
+    "dur": 263000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "babyonemoretime|britneyspears": {
+    "ms": 41360,
+    "dur": 211000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "baby|justinbieberfeatludacris": {
+    "ms": 46510,
+    "dur": 217000,
+    "conf": "high",
+    "why": "7-line block repeats 6 times and contains the title"
+  },
+  "backinblack|acdc": {
+    "ms": 60840,
+    "dur": 256000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "backtolifehoweverdoyouwantme|souliisoul": {
+    "ms": 0,
+    "dur": 228000,
+    "conf": "medium",
+    "why": "title line appears 5 times but not inside a repeating multi-line block"
+  },
+  "badboys|innercircle": {
+    "ms": 25470,
+    "dur": 230000,
+    "conf": "high",
+    "why": "6-line block repeats 16 times and contains the title"
+  },
+  "badday|danielpowter": {
+    "ms": 59200,
+    "dur": 234000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "badguy|billieeilish": {
+    "ms": 54970,
+    "dur": 194000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "badhabit|stevelacy": {
+    "ms": 1370,
+    "dur": 232000,
+    "conf": "low",
+    "why": "4-line block repeats 7 times but does not contain the title"
+  },
+  "badromance|ladygaga": {
+    "ms": 1760,
+    "dur": 295000,
+    "conf": "high",
+    "why": "8-line block repeats 8 times and contains the title"
+  },
+  "bad|michaeljackson": {
+    "ms": 67200,
+    "dur": 247000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "bangarang|skrillexfeatsirah": {
+    "ms": 19620,
+    "dur": 215000,
+    "conf": "high",
+    "why": "4-line block repeats 9 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "barbiegirl|aqua": {
+    "ms": 8690,
+    "dur": 196000,
+    "conf": "high",
+    "why": "5-line block repeats 5 times and contains the title"
+  },
+  "basketcase|greenday": {
+    "ms": 21680,
+    "dur": 182000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "beatit|michaeljackson": {
+    "ms": 63920,
+    "dur": 258000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "beautifulgirls|seankingston": {
+    "ms": 5690,
+    "dur": 242000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "beautiful|christinaaguilera": {
+    "ms": 63370,
+    "dur": 239000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "becauseofyou|kellyclarkson": {
+    "ms": 40920,
+    "dur": 219000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "becauseofyou|nickelback": {
+    "ms": 40000,
+    "dur": 210000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "behindblueeyes|limpbizkit": {
+    "ms": 14830,
+    "dur": 270000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "behindthesehazeleyes|kellyclarkson": {
+    "ms": 49490,
+    "dur": 199000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "believe|cher": {
+    "ms": 57220,
+    "dur": 239000,
+    "conf": "high",
+    "why": "6-line block repeats 7 times and contains the title"
+  },
+  "bettedaviseyes|kimcarnes": {
+    "ms": 40640,
+    "dur": 223000,
+    "conf": "medium",
+    "why": "6-line block repeats 2 times and contains the title"
+  },
+  "bigyellowtaxi|jonimitchell": {
+    "ms": 20960,
+    "dur": 135000,
+    "conf": "low",
+    "why": "3-line block repeats 4 times but does not contain the title"
+  },
+  "billiejean|michaeljackson": {
+    "ms": 85190,
+    "dur": 294000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "birdsofafeather|billieeilish": {
+    "ms": 58570,
+    "dur": 210000,
+    "conf": "low",
+    "why": "3-line block repeats only 2 times and does not contain the title"
+  },
+  "bitch|meredithbrooks": {
+    "ms": 52180,
+    "dur": 253000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "bittersweetsymphonyremastered2016|theverve": {
+    "ms": 109710,
+    "dur": 358000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "bittersweetsymphony|theverve": {
+    "ms": 79740,
+    "dur": 358000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "blackholesun|soundgarden": {
+    "ms": 51580,
+    "dur": 318000,
+    "conf": "high",
+    "why": "6-line block repeats 10 times and contains the title"
+  },
+  "blackorwhite|michaeljackson": {
+    "ms": 31230,
+    "dur": 255000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "bleedinglove|leonalewis": {
+    "ms": 74710,
+    "dur": 262000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "blindinglights|theweeknd": {
+    "ms": 59390,
+    "dur": 200000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "bluedabadee|eiffel65": {
+    "ms": 32500,
+    "dur": 219000,
+    "conf": "high",
+    "why": "8-line block repeats 10 times and contains the title"
+  },
+  "bluemonday|neworder": {
+    "ms": 149880,
+    "dur": 449000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "boombastic|shaggy": {
+    "ms": 66740,
+    "dur": 247000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "bornintheusa|brucespringsteen": {
+    "ms": 32190,
+    "dur": 281000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "borntomakeyouhappy|britneyspears": {
+    "ms": 51630,
+    "dur": 244000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "borntorun|brucespringsteen": {
+    "ms": 47450,
+    "dur": 270000,
+    "conf": "medium",
+    "why": "title line appears 4 times but not inside a repeating multi-line block"
+  },
+  "boulevardofbrokendreams|greenday": {
+    "ms": 27230,
+    "dur": 261000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "boysaliarpt2|pinkpantheressicespice": {
+    "ms": 27610,
+    "dur": 131000,
+    "conf": "medium",
+    "why": "8-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "boysdontcry|thecure": {
+    "ms": 43700,
+    "dur": 155000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "breakfastattiffanys|deepbluesomething": {
+    "ms": 41200,
+    "dur": 257000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "breakingthehabit|linkinpark": {
+    "ms": 60130,
+    "dur": 196000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "breakmystride|matthewwilder": {
+    "ms": 34250,
+    "dur": 184000,
+    "conf": "high",
+    "why": "6-line block repeats 5 times and contains the title"
+  },
+  "breathing|primecircle": {
+    "ms": 55850,
+    "dur": 219000,
+    "conf": "medium",
+    "why": "7-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "breathless|thecorrs": {
+    "ms": 48940,
+    "dur": 206000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "brickhouse|commodores": {
+    "ms": 24350,
+    "dur": 209000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "bridgeovertroubledwater|simongarfunkel": {
+    "ms": 64060,
+    "dur": 292000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "bringmetolife|evanescence": {
+    "ms": 50750,
+    "dur": 236000,
+    "conf": "low",
+    "why": "6-line block repeats 3 times but does not contain the title"
+  },
+  "brokenpromises|primecircle": {
+    "ms": 54950,
+    "dur": 210000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "brownsugar|therollingstones": {
+    "ms": 45900,
+    "dur": 229000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "burn|elliegoulding": {
+    "ms": 52740,
+    "dur": 231000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "butterfly|crazytown": {
+    "ms": 7980,
+    "dur": 217000,
+    "conf": "high",
+    "why": "3-line block repeats 10 times and contains the title"
+  },
+  "byebyebye|nsync": {
+    "ms": 52750,
+    "dur": 201000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "bytheway|redhotchilipeppers": {
+    "ms": 15700,
+    "dur": 217000,
+    "conf": "high",
+    "why": "6-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "californiatheoctheme|phantomplanet": {
+    "ms": 16820,
+    "dur": 194000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "californication|redhotchilipeppers": {
+    "ms": 88850,
+    "dur": 330000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "callme|blondie": {
+    "ms": 33650,
+    "dur": 212000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "cannedheat|jamiroquai": {
+    "ms": 55240,
+    "dur": 332000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "cantfeelmyface|theweeknd": {
+    "ms": 43580,
+    "dur": 214000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "cantfightthemoonlight|leannrimes": {
+    "ms": 45170,
+    "dur": 216000,
+    "conf": "high",
+    "why": "7-line block repeats 8 times and contains the title"
+  },
+  "cantgetenoughofyourlovebabe|barrywhite": {
+    "ms": 37350,
+    "dur": 274000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "cantgetyououtofmyhead|kylieminogue": {
+    "ms": 27960,
+    "dur": 231000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "cantstop|redhotchilipeppers": {
+    "ms": 68690,
+    "dur": 268000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "canwetalk|tevincampbell": {
+    "ms": 77190,
+    "dur": 284000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "canyoufeelthelovetonight|eltonjohn": {
+    "ms": 45980,
+    "dur": 241000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "carryonwaywardson|kansas": {
+    "ms": 0,
+    "dur": 323000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "catsinthecradle|harrychapin": {
+    "ms": 32870,
+    "dur": 226000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "celebrationsingleversion|koolthegang": {
+    "ms": 64020,
+    "dur": 221000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "celebration|koolthegang": {
+    "ms": 63720,
+    "dur": 223000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "chandelier|sia": {
+    "ms": 32350,
+    "dur": 216000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "chasingcars|snowpatrol": {
+    "ms": 39050,
+    "dur": 266000,
+    "conf": "low",
+    "why": "3-line block repeats 4 times but does not contain the title"
+  },
+  "chericherilady|moderntalking": {
+    "ms": 48050,
+    "dur": 226000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "cherrypie|warrant": {
+    "ms": 15190,
+    "dur": 201000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "chopsuey|systemofadown": {
+    "ms": 60690,
+    "dur": 210000,
+    "conf": "medium",
+    "why": "2-line block repeats 5 times; title never appears in the lyrics"
+  },
+  "circles|postmalone": {
+    "ms": 70850,
+    "dur": 215000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "clarity|zeddfeaturingfoxes": {
+    "ms": 53000,
+    "dur": 271000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "clinteastwood|gorillaz": {
+    "ms": 11620,
+    "dur": 341000,
+    "conf": "medium",
+    "why": "8-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "closer|neyo": {
+    "ms": 59010,
+    "dur": 234000,
+    "conf": "low",
+    "why": "8-line block repeats 4 times but does not contain the title"
+  },
+  "closer|thechainsmokersfeaturinghalsey": {
+    "ms": 49070,
+    "dur": 245000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "closingtime|semisonic": {
+    "ms": 76990,
+    "dur": 274000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "closure|primecircle": {
+    "ms": 57300,
+    "dur": 212000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "clubtropicana|wham": {
+    "ms": 66280,
+    "dur": 266000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "comatose|skillet": {
+    "ms": 49330,
+    "dur": 230000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "comeoneileen|dexysmidnightrunners": {
+    "ms": 84320,
+    "dur": 287000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "complicated|avrillavigne": {
+    "ms": 61820,
+    "dur": 245000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "conga|miamisoundmachine": {
+    "ms": 0,
+    "dur": 256000,
+    "conf": "high",
+    "why": "2-line block repeats 7 times and contains the title"
+  },
+  "cottoneyejoe|rednex": {
+    "ms": 0,
+    "dur": 193000,
+    "conf": "high",
+    "why": "8-line block repeats 9 times and contains the title"
+  },
+  "couldyoubeloved|bobmarleyandthewailers": {
+    "ms": 186250,
+    "dur": 237610,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "countingstars|onerepublic": {
+    "ms": 0,
+    "dur": 257000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title"
+  },
+  "crash|theprimitives": {
+    "ms": 9690,
+    "dur": 154000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "crawlingbacktoyou|daughtry": {
+    "ms": 33320,
+    "dur": 225000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "crazyinlove|beyoncefeatjayz": {
+    "ms": 48060,
+    "dur": 250000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "crazytrain|ozzyosbourne": {
+    "ms": 72360,
+    "dur": 290000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "crazy|gnarlsbarkley": {
+    "ms": 36210,
+    "dur": 177000,
+    "conf": "medium",
+    "why": "title line appears 9 times but not inside a repeating multi-line block"
+  },
+  "creep|radiohead": {
+    "ms": 58660,
+    "dur": 239000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "cruelsummer|bananarama": {
+    "ms": 50910,
+    "dur": 215000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "cryforme|theweeknd": {
+    "ms": 45040,
+    "dur": 224000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "cryingatthediscoteque|alcazar": {
+    "ms": 52380,
+    "dur": 232000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "crymeariver|justintimberlake": {
+    "ms": 88930,
+    "dur": 288000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "dakiti|badbunnyjhaycortez": {
+    "ms": 14650,
+    "dur": 205000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "damnregret|theredjumpsuitapparatus": {
+    "ms": 41620,
+    "dur": 166000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "dancehalldays|wangchung": {
+    "ms": 35850,
+    "dur": 241000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "dancinginthedark|brucespringsteen": {
+    "ms": 44560,
+    "dur": 240000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "dancinginthemoonlight|toploader": {
+    "ms": 49030,
+    "dur": 233000,
+    "conf": "high",
+    "why": "5-line block repeats 5 times and contains the title"
+  },
+  "dancingontheceiling|lionelrichie": {
+    "ms": 35900,
+    "dur": 276000,
+    "conf": "high",
+    "why": "4-line block repeats 10 times and contains the title"
+  },
+  "dancingqueen|abba": {
+    "ms": 18700,
+    "dur": 231000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "dancingwithmyself2001remaster|billyidolgenerationx": {
+    "ms": 31830,
+    "dur": 226000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title"
+  },
+  "dangerzonefromtopgunoriginalsoundtrack|kennyloggins": {
+    "ms": 27280,
+    "dur": 215000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "darkhorse|katyperryfeaturingjuicyj": {
+    "ms": 54530,
+    "dur": 216000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "dearmariacountmein|alltimelow": {
+    "ms": 860,
+    "dur": 183000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "decodetwilightsoundtrackversion|paramore": {
+    "ms": 47540,
+    "dur": 262000,
+    "conf": "medium",
+    "why": "3-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "despacito|luisfonsifeaturingdaddyyankee": {
+    "ms": 60010,
+    "dur": 229000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "diamonds|rihanna": {
+    "ms": 0,
+    "dur": 225000,
+    "conf": "high",
+    "why": "2-line block repeats 9 times and contains the title"
+  },
+  "diewithasmile|ladygagabrunomars": {
+    "ms": 66110,
+    "dur": 252000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "dilemma|nellyfeatkellyrowland": {
+    "ms": 21370,
+    "dur": 289000,
+    "conf": "medium",
+    "why": "8-line block repeats 9 times; title never appears in the lyrics"
+  },
+  "disturbia|rihanna": {
+    "ms": 60760,
+    "dur": 239000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "doctordoctor|thompsontwins": {
+    "ms": 129880,
+    "dur": 346000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "doiwannaknow|arcticmonkeys": {
+    "ms": 85340,
+    "dur": 273000,
+    "conf": "low",
+    "why": "2-line block repeats 3 times but does not contain the title"
+  },
+  "dontfearthereaper|blueoystercult": {
+    "ms": 43160,
+    "dur": 307148,
+    "conf": "low",
+    "why": "3-line block repeats only 2 times and does not contain the title"
+  },
+  "dontgo|yazoo": {
+    "ms": 32250,
+    "dur": 188000,
+    "conf": "high",
+    "why": "2-line block repeats 10 times and contains the title"
+  },
+  "dontspeak|nodoubt": {
+    "ms": 43330,
+    "dur": 263000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "dontstopbelievin|journey": {
+    "ms": 199760,
+    "dur": 251000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "dontstopmenowremastered2011|queen": {
+    "ms": 50540,
+    "dur": 209000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "dontstopmenow|queen": {
+    "ms": 50430,
+    "dur": 209000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "dontstopmovin|sclub": {
+    "ms": 0,
+    "dur": 234000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "dontstoptilyougetenough|michaeljackson": {
+    "ms": 78960,
+    "dur": 364000,
+    "conf": "high",
+    "why": "8-line block repeats 18 times and contains the title"
+  },
+  "dontworrybehappy|bobbymcferrin": {
+    "ms": 62360,
+    "dur": 294000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "dontyouforgetaboutme|simpleminds": {
+    "ms": 51550,
+    "dur": 263000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "dontyouwantme|thehumanleague": {
+    "ms": 75980,
+    "dur": 237000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title"
+  },
+  "downunder|menatwork": {
+    "ms": 27940,
+    "dur": 222000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "doyoubelieveinlove|hueylewisthenews": {
+    "ms": 45710,
+    "dur": 208000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "dragosteadintei|ozone": {
+    "ms": 69940,
+    "dur": 214000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "drbeat|miamisoundmachine": {
+    "ms": 64460,
+    "dur": 263000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "dreamon|aerosmith": {
+    "ms": 122810,
+    "dur": 267000,
+    "conf": "low",
+    "why": "4-line block repeats 4 times but does not contain the title"
+  },
+  "dreams|fleetwoodmac": {
+    "ms": 70750,
+    "dur": 256000,
+    "conf": "low",
+    "why": "3-line block repeats 3 times but does not contain the title"
+  },
+  "driveby|train": {
+    "ms": 33950,
+    "dur": 196000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "driverslicense|oliviarodrigo": {
+    "ms": 53010,
+    "dur": 242000,
+    "conf": "low",
+    "why": "5-line block repeats 3 times but does not contain the title"
+  },
+  "dropsofjupitertellme|train": {
+    "ms": 216780,
+    "dur": 260000,
+    "conf": "low",
+    "why": "2-line block repeats 3 times but does not contain the title"
+  },
+  "dtmf|badbunny": {
+    "ms": 81560,
+    "dur": 237000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "duality|slipknot": {
+    "ms": 0,
+    "dur": 253000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "dummarodum|ashabhosle": {
+    "ms": 22690,
+    "dur": 208000,
+    "conf": "medium",
+    "why": "6-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "dynamite|bts": {
+    "ms": 40420,
+    "dur": 199000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "earfquake|tylerthecreator": {
+    "ms": 24120,
+    "dur": 190000,
+    "conf": "medium",
+    "why": "3-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "endoftheroad|boyziimen": {
+    "ms": 75710,
+    "dur": 350000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "enemy|imaginedragonsjid": {
+    "ms": 31370,
+    "dur": 173000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "enjoythesilence|depechemode": {
+    "ms": 41730,
+    "dur": 258000,
+    "conf": "low",
+    "why": "5-line block repeats 4 times but does not contain the title"
+  },
+  "entersandman|metallica": {
+    "ms": 92420,
+    "dur": 331000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "escapethepinacoladasong|rupertholmes": {
+    "ms": 53590,
+    "dur": 276000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "escape|enriqueiglesias": {
+    "ms": 2240,
+    "dur": 209000,
+    "conf": "high",
+    "why": "4-line block repeats 10 times and contains the title"
+  },
+  "espresso|sabrinacarpenter": {
+    "ms": 15380,
+    "dur": 175000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "eternity|robbiewilliams": {
+    "ms": 71530,
+    "dur": 303000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "everlong|foofighters": {
+    "ms": 95890,
+    "dur": 251000,
+    "conf": "low",
+    "why": "5-line block repeats 3 times but does not contain the title"
+  },
+  "everybodybackstreetsbackradioedit|backstreetboys": {
+    "ms": 8050,
+    "dur": 225000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "everybodybackstreetsback|backstreetboys": {
+    "ms": 8050,
+    "dur": 225000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "everybodyhavefuntonight|wangchung": {
+    "ms": 66480,
+    "dur": 287000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title"
+  },
+  "everybodyhurts|rem": {
+    "ms": 61630,
+    "dur": 320000,
+    "conf": "medium",
+    "why": "title line appears 7 times but not inside a repeating multi-line block"
+  },
+  "everybodyschanging|keane": {
+    "ms": 66630,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "everybodywantstoruletheworld|tearsforfears": {
+    "ms": 85140,
+    "dur": 251000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "everybreathyoutake|thepolice": {
+    "ms": 23900,
+    "dur": 254000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times and does not contain the title"
+  },
+  "everyrosehasitsthorn|poison": {
+    "ms": 43710,
+    "dur": 260000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "everytimeyouturnaround|daughtry": {
+    "ms": 75100,
+    "dur": 219000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "eyeofthetiger|survivor": {
+    "ms": 81420,
+    "dur": 245000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "facedown|theredjumpsuitapparatus": {
+    "ms": 35480,
+    "dur": 192000,
+    "conf": "low",
+    "why": "4-line block repeats 4 times but does not contain the title"
+  },
+  "fallin|aliciakeys": {
+    "ms": 36820,
+    "dur": 210000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "falsepretense|theredjumpsuitapparatus": {
+    "ms": 35690,
+    "dur": 150000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "famererecorded|irenecara": {
+    "ms": 66750,
+    "dur": 317000,
+    "conf": "medium",
+    "why": "2-line block repeats 5 times; title never appears in the lyrics"
+  },
+  "familyaffair|maryjblige": {
+    "ms": 19760,
+    "dur": 266000,
+    "conf": "medium",
+    "why": "8-line block repeats 7 times; title never appears in the lyrics"
+  },
+  "fantasy|mariahcarey": {
+    "ms": 59600,
+    "dur": 243000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "fastcar|tracychapman": {
+    "ms": 102330,
+    "dur": 297000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "feelgoodinc|gorillaz": {
+    "ms": 64340,
+    "dur": 223000,
+    "conf": "low",
+    "why": "8-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "feelradioedit|robbiewilliams": {
+    "ms": 46100,
+    "dur": 223000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "feel|robbiewilliams": {
+    "ms": 45760,
+    "dur": 264000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "feliznavidad|josefeliciano": {
+    "ms": 10770,
+    "dur": 182000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "fernando|abba": {
+    "ms": 84630,
+    "dur": 253000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "fighter|christinaaguilera": {
+    "ms": 66790,
+    "dur": 246000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "fightfightfight|zebragiraffe": {
+    "ms": 32630,
+    "dur": 222000,
+    "conf": "low",
+    "why": "7-line block repeats only 2 times and does not contain the title"
+  },
+  "fightthepower|theisleybrothers": {
+    "ms": 25950,
+    "dur": 319000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "fireflies|owlcity": {
+    "ms": 41480,
+    "dur": 228000,
+    "conf": "low",
+    "why": "3-line block repeats 5 times but does not contain the title"
+  },
+  "firestarter|theprodigy": {
+    "ms": 46820,
+    "dur": 280000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "firework|katyperry": {
+    "ms": 51830,
+    "dur": 227000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "flashdancewhatafeelingradioedit|irenecara": {
+    "ms": 91280,
+    "dur": 239000,
+    "conf": "medium",
+    "why": "2-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "flowers|mileycyrus": {
+    "ms": 31720,
+    "dur": 201000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "flyaway|lennykravitz": {
+    "ms": 46150,
+    "dur": 221000,
+    "conf": "high",
+    "why": "6-line block repeats 11 times and contains the title"
+  },
+  "folded|kehlani": {
+    "ms": 54790,
+    "dur": 238000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "followme|unclekracker": {
+    "ms": 26050,
+    "dur": 218000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "followyou|bringmethehorizon": {
+    "ms": 89770,
+    "dur": 230000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "foolish|ashanti": {
+    "ms": 7630,
+    "dur": 228000,
+    "conf": "medium",
+    "why": "8-line block repeats 8 times; title never appears in the lyrics"
+  },
+  "footloose|kennyloggins": {
+    "ms": 57180,
+    "dur": 221000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "freebird|lynyrdskynyrd": {
+    "ms": 100320,
+    "dur": 550000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times and does not contain the title"
+  },
+  "freefallin|tompetty": {
+    "ms": 72260,
+    "dur": 256000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "fridayiminlove|thecure": {
+    "ms": 38080,
+    "dur": 214000,
+    "conf": "medium",
+    "why": "5-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "funkytown|lippsinc": {
+    "ms": 66460,
+    "dur": 238000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "gangnamstyle|psy": {
+    "ms": 87950,
+    "dur": 219000,
+    "conf": "medium",
+    "why": "2-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "genieinabottle|christinaaguilera": {
+    "ms": 43840,
+    "dur": 217000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "getlucky|daftpunkfeaturingpharrellwilliamsandnilerodgers": {
+    "ms": 70780,
+    "dur": 248000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "getthepartystarted|pnk": {
+    "ms": 8640,
+    "dur": 192000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title"
+  },
+  "getupifeellikebeingasexmachine|jamesbrown": {
+    "ms": 13930,
+    "dur": 317000,
+    "conf": "medium",
+    "why": "8-line block repeats 24 times; title never appears in the lyrics"
+  },
+  "ghosttown|thespecials": {
+    "ms": 186360,
+    "dur": 219000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "gimmegimmegimmeamanaftermidnight|abba": {
+    "ms": 67300,
+    "dur": 289000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "girlfriend|avrillavigne": {
+    "ms": 0,
+    "dur": 217000,
+    "conf": "high",
+    "why": "8-line block repeats 5 times and contains the title"
+  },
+  "girllikeme|pinkpantheress": {
+    "ms": 35680,
+    "dur": 146000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "girlsgirlsgirls|motleycrue": {
+    "ms": 201340,
+    "dur": 270000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "girlsjustwanttohavefun|cyndilauper": {
+    "ms": 26940,
+    "dur": 238000,
+    "conf": "medium",
+    "why": "2-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "giveittomebaby|rickjames": {
+    "ms": 62860,
+    "dur": 248000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "giveitup|kcthesunshineband": {
+    "ms": 63070,
+    "dur": 255000,
+    "conf": "high",
+    "why": "8-line block repeats 8 times and contains the title"
+  },
+  "givemeonereason|tracychapman": {
+    "ms": 31160,
+    "dur": 268000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "gloria|laurabranigan": {
+    "ms": 53960,
+    "dur": 291000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "gloryoflove|petercetera": {
+    "ms": 71010,
+    "dur": 258000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "godsavethequeen|sexpistols": {
+    "ms": 56420,
+    "dur": 199000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "goingunder|evanescence": {
+    "ms": 45730,
+    "dur": 215000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "golden|huntrxejaeaudreynunareiami": {
+    "ms": 65670,
+    "dur": 195000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "gonnamakeyousweateverybodydancenow|ccmusicfactory": {
+    "ms": 86360,
+    "dur": 247000,
+    "conf": "low",
+    "why": "6-line block repeats 3 times but does not contain the title"
+  },
+  "good4u|oliviarodrigo": {
+    "ms": 27240,
+    "dur": 178000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "goodbyeyellowbrickroad|eltonjohn": {
+    "ms": 48850,
+    "dur": 194000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "goodlife|onerepublic": {
+    "ms": 43500,
+    "dur": 253000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "goodluckbabe|chappellroan": {
+    "ms": 51680,
+    "dur": 218000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "goyourownway|fleetwoodmac": {
+    "ms": 34050,
+    "dur": 219000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "gracekelly|mika": {
+    "ms": 24840,
+    "dur": 188000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "grenade|brunomars": {
+    "ms": 36180,
+    "dur": 223000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "groovejetifthisaintlove|spillersophieellisbextor": {
+    "ms": 46220,
+    "dur": 228000,
+    "conf": "medium",
+    "why": "2-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "hangingbyamoment|lifehouse": {
+    "ms": 21670,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "happy|pharrellwilliams": {
+    "ms": 167840,
+    "dur": 233000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "harderbetterfasterstronger|daftpunk": {
+    "ms": 97230,
+    "dur": 225000,
+    "conf": "medium",
+    "why": "8-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "heartless|kanyewest": {
+    "ms": 0,
+    "dur": 211000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "heartofglass|blondie": {
+    "ms": 6870,
+    "dur": 250000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "heartofgold|neilyoung": {
+    "ms": 50020,
+    "dur": 187000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "heartshapedbox|nirvana": {
+    "ms": 9150,
+    "dur": 281000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "heatwaves|glassanimals": {
+    "ms": 28460,
+    "dur": 239000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "heavenisaplaceonearthpromo7edit|belindacarlisle": {
+    "ms": 0,
+    "dur": 233000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title"
+  },
+  "heaven|djsammyyanoudo": {
+    "ms": 360,
+    "dur": 235000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "hello|primecircle": {
+    "ms": 51430,
+    "dur": 223000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "herewithme|dido": {
+    "ms": 56820,
+    "dur": 255000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "herewithoutyou|3doorsdown": {
+    "ms": 45580,
+    "dur": 238000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "heroes|davidbowie": {
+    "ms": 23750,
+    "dur": 370000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "herofeatjoseyscott|chadkroegerjoseyscott": {
+    "ms": 29740,
+    "dur": 200000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "hero|enriqueiglesias": {
+    "ms": 62150,
+    "dur": 264000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "hero|mariahcarey": {
+    "ms": 47630,
+    "dur": 258000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "hero|skillet": {
+    "ms": 47610,
+    "dur": 187000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "heybaby|nodoubtbountykiller": {
+    "ms": 5830,
+    "dur": 207000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "heysoulsister|train": {
+    "ms": 50000,
+    "dur": 217000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "heyya|outkast": {
+    "ms": 32870,
+    "dur": 237000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "higher|creed": {
+    "ms": 73910,
+    "dur": 317000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "highhopes|panicatthedisco": {
+    "ms": 10540,
+    "dur": 191000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "highwaytohell|acdc": {
+    "ms": 55480,
+    "dur": 208000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "hipsdontlie|shakirafeatwyclefjean": {
+    "ms": 85340,
+    "dur": 218000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "hiptobesquare|hueylewisthenews": {
+    "ms": 39510,
+    "dur": 245000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title"
+  },
+  "holdingoutforaherofromfootloosesoundtrack|bonnietyler": {
+    "ms": 55490,
+    "dur": 348000,
+    "conf": "high",
+    "why": "8-line block repeats 10 times and contains the title"
+  },
+  "holdmenow|thompsontwins": {
+    "ms": 51830,
+    "dur": 286000,
+    "conf": "high",
+    "why": "5-line block repeats 8 times and contains the title"
+  },
+  "holdon|wilsonphillips": {
+    "ms": 59490,
+    "dur": 267000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "holdtheline|toto": {
+    "ms": 38890,
+    "dur": 236000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "holeinthehead|sugababes": {
+    "ms": 44240,
+    "dur": 218000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "hotelcalifornia|eagles": {
+    "ms": 103430,
+    "dur": 391000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "hotncold|katyperry": {
+    "ms": 30280,
+    "dur": 220000,
+    "conf": "medium",
+    "why": "8-line block repeats 7 times; title never appears in the lyrics"
+  },
+  "hotstuff|donnasummer": {
+    "ms": 49730,
+    "dur": 229000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "howtosavealife|thefray": {
+    "ms": 38130,
+    "dur": 263000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "howyouremindme|nickelback": {
+    "ms": 15490,
+    "dur": 224000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "human|thekillers": {
+    "ms": 34980,
+    "dur": 245000,
+    "conf": "high",
+    "why": "8-line block repeats 9 times and contains the title"
+  },
+  "hungryeyesfromdirtydancingsoundtrack|ericcarmen": {
+    "ms": 50350,
+    "dur": 251000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title"
+  },
+  "hungrylikethewolf2009remaster|duranduran": {
+    "ms": 112880,
+    "dur": 222000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "hungup|madonna": {
+    "ms": 58930,
+    "dur": 337000,
+    "conf": "high",
+    "why": "7-line block repeats 7 times and contains the title"
+  },
+  "hysteria|defleppard": {
+    "ms": 68770,
+    "dur": 355000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "ibelieveicanfly|rkelly": {
+    "ms": 74710,
+    "dur": 320000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "ibelieveinathingcalledlove|thedarkness": {
+    "ms": 45050,
+    "dur": 217000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "iceicebaby|vanillaice": {
+    "ms": 56420,
+    "dur": 271000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "idontwanttobe|gavindegraw": {
+    "ms": 36790,
+    "dur": 218000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "idontwanttomissathing|aerosmith": {
+    "ms": 69940,
+    "dur": 298000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "ifeelitcoming|theweekndfeatdaftpunk": {
+    "ms": 59400,
+    "dur": 269000,
+    "conf": "high",
+    "why": "4-line block repeats 13 times and contains the title"
+  },
+  "ifeellove|donnasummer": {
+    "ms": 63700,
+    "dur": 228000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "ifiaintgotyou|aliciakeys": {
+    "ms": 78230,
+    "dur": 229000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "ignorance|paramore": {
+    "ms": 91220,
+    "dur": 219000,
+    "conf": "high",
+    "why": "2-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "igottafeeling|theblackeyedpeas": {
+    "ms": 31780,
+    "dur": 289000,
+    "conf": "low",
+    "why": "3-line block repeats 8 times but does not contain the title"
+  },
+  "ijustdiedinyourarms|cuttingcrew": {
+    "ms": 39980,
+    "dur": 281000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "illtakeyouthere|thestaplesingers": {
+    "ms": 52610,
+    "dur": 195000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "imagine|johnlennon": {
+    "ms": 12940,
+    "dur": 184000,
+    "conf": "medium",
+    "why": "title line appears 6 times but not inside a repeating multi-line block"
+  },
+  "imgonnabe500miles|theproclaimers": {
+    "ms": 63990,
+    "dur": 219000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "imjustakid|simpleplan": {
+    "ms": 25210,
+    "dur": 198000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "imlikeabird|nellyfurtado": {
+    "ms": 52130,
+    "dur": 243000,
+    "conf": "high",
+    "why": "7-line block repeats 6 times and contains the title"
+  },
+  "imouttalove|anastacia": {
+    "ms": 64960,
+    "dur": 243000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "imsoexcited|thepointersisters": {
+    "ms": 70770,
+    "dur": 231000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "imstillstanding|eltonjohn": {
+    "ms": 37340,
+    "dur": 183000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "imwithyou|avrillavigne": {
+    "ms": 64320,
+    "dur": 223000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "indaclub|50cent": {
+    "ms": 13890,
+    "dur": 193000,
+    "conf": "medium",
+    "why": "8-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "independentwomenpt1|destinyschild": {
+    "ms": 57570,
+    "dur": 221000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "intheairtonight|philcollins": {
+    "ms": 36880,
+    "dur": 329000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title"
+  },
+  "intheend|blackveilbrides": {
+    "ms": 0,
+    "dur": 228000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title"
+  },
+  "intheend|linkinpark": {
+    "ms": 52750,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "intheshadows|therasmus": {
+    "ms": 70270,
+    "dur": 258000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "intothegroove|madonna": {
+    "ms": 15730,
+    "dur": 285000,
+    "conf": "high",
+    "why": "4-line block repeats 8 times and contains the title"
+  },
+  "invisibletouchremastered2007|genesis": {
+    "ms": 40050,
+    "dur": 208000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "iransofarawaysingleedit|aflockofseagulls": {
+    "ms": 50340,
+    "dur": 222000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "iris|googoodolls": {
+    "ms": 47700,
+    "dur": 290000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "ironic2015remaster|alanismorissette": {
+    "ms": 31980,
+    "dur": 230000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "irreplaceable|beyonce": {
+    "ms": 58030,
+    "dur": 228000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title"
+  },
+  "islandinthesun|weezer": {
+    "ms": 33550,
+    "dur": 200000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "istheresomeoneelse|theweeknd": {
+    "ms": 54880,
+    "dur": 199000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "itfeelssogoodradioedit|sonique": {
+    "ms": 56620,
+    "dur": 229000,
+    "conf": "low",
+    "why": "2-line block repeats 3 times but does not contain the title"
+  },
+  "ithinkwerealonenow|tiffany": {
+    "ms": 48080,
+    "dur": 229000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "itsmylife1997remaster|talktalk": {
+    "ms": 62370,
+    "dur": 233000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "itsmylife|bonjovi": {
+    "ms": 31970,
+    "dur": 224000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "itsmylife|nodoubt": {
+    "ms": 56940,
+    "dur": 226000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "itsnotover|daughtry": {
+    "ms": 38070,
+    "dur": 215000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "itsrainingmen|gerihalliwell": {
+    "ms": 48530,
+    "dur": 255000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "iturntoyouhexhectorradiomix|melaniechexhector": {
+    "ms": 54230,
+    "dur": 252000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "itwasntme|shaggyfeatrikrok": {
+    "ms": 19490,
+    "dur": 227000,
+    "conf": "low",
+    "why": "7-line block repeats 4 times but does not contain the title"
+  },
+  "ivehadthetimeofmylife|billmedleyandjenniferwarnes": {
+    "ms": 10950,
+    "dur": 290358,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "iwannadancewithsomebodywholovesme|whitneyhouston": {
+    "ms": 61540,
+    "dur": 293000,
+    "conf": "high",
+    "why": "8-line block repeats 5 times and contains the title"
+  },
+  "iwantitthatway|backstreetboys": {
+    "ms": 54060,
+    "dur": 213000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "iwillalwaysloveyou|dollyparton": {
+    "ms": 39900,
+    "dur": 174000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "iwillalwaysloveyou|whitneyhouston": {
+    "ms": 41290,
+    "dur": 271000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "iwillsurvive|gloriagaynor": {
+    "ms": 75170,
+    "dur": 217000,
+    "conf": "medium",
+    "why": "5-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "jekyllhyde|primecircle": {
+    "ms": 51800,
+    "dur": 175000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "jerkitout|caesars": {
+    "ms": 47340,
+    "dur": 196000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "jessiesgirl|rickspringfield": {
+    "ms": 31850,
+    "dur": 195000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "jolene|dollyparton": {
+    "ms": 7450,
+    "dur": 160000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "jump2015remaster|vanhalen": {
+    "ms": 118370,
+    "dur": 240000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "jumporiginalmix|thepointersisters": {
+    "ms": 69360,
+    "dur": 264777,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title"
+  },
+  "jump|vanhalen": {
+    "ms": 118630,
+    "dur": 242000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "justcantgetenough|depechemode": {
+    "ms": 24980,
+    "dur": 222000,
+    "conf": "high",
+    "why": "2-line block repeats 24 times and contains the title"
+  },
+  "justlikeapill|pnk": {
+    "ms": 54120,
+    "dur": 237000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "justthewayyouare|brunomars": {
+    "ms": 62150,
+    "dur": 221000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "karmachameleon|cultureclub": {
+    "ms": 42150,
+    "dur": 241000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "kidsinamerica|kimwilde": {
+    "ms": 43980,
+    "dur": 206000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "killbill|sza": {
+    "ms": 19360,
+    "dur": 154000,
+    "conf": "low",
+    "why": "4-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "killerqueen|queen": {
+    "ms": 25460,
+    "dur": 180000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "killinginthename|rageagainstthemachine": {
+    "ms": 68680,
+    "dur": 314000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "killingmesoftlywithhissong|fugees": {
+    "ms": 9170,
+    "dur": 299000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "kissmemore|dojacatfeaturingsza": {
+    "ms": 41460,
+    "dur": 209000,
+    "conf": "medium",
+    "why": "6-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "kissme|sixpencenonethericher": {
+    "ms": 36930,
+    "dur": 210000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "kiss|princeandtherevolution": {
+    "ms": 46590,
+    "dur": 226000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "knockinonheavensdoor|bobdylan": {
+    "ms": 62490,
+    "dur": 150000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "kryptonite|3doorsdown": {
+    "ms": 67210,
+    "dur": 234000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "kungfufighting|carldouglas": {
+    "ms": 23860,
+    "dur": 198000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "labamba|loslobos": {
+    "ms": 4130,
+    "dur": 174000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "ladyhearmetonight|modjo": {
+    "ms": 44190,
+    "dur": 307000,
+    "conf": "high",
+    "why": "8-line block repeats 5 times and contains the title"
+  },
+  "laislabonita|madonna": {
+    "ms": 48730,
+    "dur": 243000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lambada|kaoma": {
+    "ms": 44270,
+    "dur": 207000,
+    "conf": "low",
+    "why": "2-line block repeats 3 times but does not contain the title"
+  },
+  "lamourtoujours|gigidagostino": {
+    "ms": 58830,
+    "dur": 242000,
+    "conf": "low",
+    "why": "8-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "landslide|fleetwoodmac": {
+    "ms": 159740,
+    "dur": 199000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "lastchristmas|wham": {
+    "ms": 34470,
+    "dur": 263000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "lastresort|paparoach": {
+    "ms": 0,
+    "dur": 200000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "leanonme|billwithers": {
+    "ms": 51320,
+    "dur": 259000,
+    "conf": "medium",
+    "why": "6-line block repeats 2 times and contains the title"
+  },
+  "leanon|majorlazerdjsnakefeaturingm": {
+    "ms": 28250,
+    "dur": 177000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "leavegetout|jojo": {
+    "ms": 43220,
+    "dur": 243000,
+    "conf": "medium",
+    "why": "7-line block repeats 2 times and contains the title"
+  },
+  "leavethedooropen|silksonic": {
+    "ms": 49450,
+    "dur": 242000,
+    "conf": "medium",
+    "why": "title line appears 6 times but not inside a repeating multi-line block"
+  },
+  "lefreak|chic": {
+    "ms": 0,
+    "dur": 214000,
+    "conf": "high",
+    "why": "8-line block repeats 14 times and contains the title"
+  },
+  "leftoutsidealone|anastacia": {
+    "ms": 62520,
+    "dur": 257000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "letitbe|thebeatles": {
+    "ms": 18330,
+    "dur": 243000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "letmeloveyou|mario": {
+    "ms": 58830,
+    "dur": 249000,
+    "conf": "medium",
+    "why": "6-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "letsdance|davidbowie": {
+    "ms": 25990,
+    "dur": 249000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "letsgetiton|marvingaye": {
+    "ms": 22540,
+    "dur": 322000,
+    "conf": "medium",
+    "why": "title line appears 10 times but not inside a repeating multi-line block"
+  },
+  "letsgroove|earthwindfire": {
+    "ms": 14250,
+    "dur": 338000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "letshearitfortheboyfromfootlooseoriginalsoundtrack|deniecewilliams": {
+    "ms": 48860,
+    "dur": 260000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "levitating|dualipa": {
+    "ms": 27030,
+    "dur": 204000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "lifeisahighway|rascalflatts": {
+    "ms": 56740,
+    "dur": 276000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title"
+  },
+  "lifeisarollercoaster|ronankeating": {
+    "ms": 59340,
+    "dur": 235000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "likeaprayerradioedit|madhouse": {
+    "ms": 24190,
+    "dur": 219000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "likeaprayer|madonna": {
+    "ms": 36930,
+    "dur": 343000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "likeavirgin|madonna": {
+    "ms": 43960,
+    "dur": 219000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "linger|thecranberries": {
+    "ms": 103200,
+    "dur": 275000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lipsofanangel|hinder": {
+    "ms": 56710,
+    "dur": 261000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "littledarkage|mgmt": {
+    "ms": 126060,
+    "dur": 300000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "liveforever|oasis": {
+    "ms": 32880,
+    "dur": 277000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "livethislife|primecircle": {
+    "ms": 83210,
+    "dur": 218000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "livinlavidaloca|rickymartin": {
+    "ms": 51900,
+    "dur": 243000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "livinonaprayer|bonjovi": {
+    "ms": 92180,
+    "dur": 249000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "lockedoutofheaven|brunomars": {
+    "ms": 54020,
+    "dur": 233000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "londoncalling|theclash": {
+    "ms": 19710,
+    "dur": 200000,
+    "conf": "medium",
+    "why": "title line appears 11 times but not inside a repeating multi-line block"
+  },
+  "loseyourself|eminem": {
+    "ms": 97180,
+    "dur": 327000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "losingmyreligion|rem": {
+    "ms": 51420,
+    "dur": 268000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lovedontcostathing|jenniferlopez": {
+    "ms": 17590,
+    "dur": 223000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lovedontletmego|davidguetta": {
+    "ms": 4180,
+    "dur": 219000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lovefool|thecardigans": {
+    "ms": 42120,
+    "dur": 196000,
+    "conf": "medium",
+    "why": "8-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "lovepride|king": {
+    "ms": 570,
+    "dur": 201000,
+    "conf": "medium",
+    "why": "4-line block repeats 8 times; title never appears in the lyrics"
+  },
+  "loveshack|theb52s": {
+    "ms": 50280,
+    "dur": 322000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "lovesong|sarabareilles": {
+    "ms": 56710,
+    "dur": 258000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "lovethewayyoulie|eminemfeaturingrihanna": {
+    "ms": 14860,
+    "dur": 263000,
+    "conf": "high",
+    "why": "2-line block repeats 8 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lovethewayyoulie|eminemrihanna": {
+    "ms": 14860,
+    "dur": 263000,
+    "conf": "high",
+    "why": "2-line block repeats 8 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "lovetoloveyoubaby|donnasummer": {
+    "ms": 14930,
+    "dur": 202000,
+    "conf": "high",
+    "why": "6-line block repeats 7 times and contains the title"
+  },
+  "lovewilltearusapart|joydivision": {
+    "ms": 44880,
+    "dur": 207000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "love|keyshiacole": {
+    "ms": 55360,
+    "dur": 255000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "madworld|garyjulesmichaelandrews": {
+    "ms": 55220,
+    "dur": 188000,
+    "conf": "low",
+    "why": "6-line block repeats only 2 times and does not contain the title"
+  },
+  "maggiemay|rodstewart": {
+    "ms": 33830,
+    "dur": 316000,
+    "conf": "medium",
+    "why": "3-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "mammamia|abba": {
+    "ms": 48510,
+    "dur": 213000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "maneater|darylhalljohnoates": {
+    "ms": 212820,
+    "dur": 273000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "maniacfromflashdance|michaelsembello": {
+    "ms": 122880,
+    "dur": 248000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "margaritaville|jimmybuffett": {
+    "ms": 40390,
+    "dur": 251000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "mariamariafeattheproductgb|santanatheproductgb": {
+    "ms": 16200,
+    "dur": 262235,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "messageinabottle|thepolice": {
+    "ms": 45650,
+    "dur": 291000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "midnightcity|m83": {
+    "ms": 136970,
+    "dur": 241000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "midnighttraintogeorgia|gladysknightthepips": {
+    "ms": 53870,
+    "dur": 278000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "mirrors|justintimberlake": {
+    "ms": 46710,
+    "dur": 277000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "miserybusiness|paramore": {
+    "ms": 49240,
+    "dur": 212000,
+    "conf": "medium",
+    "why": "8-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "missing2013remaster|everythingbutthegirl": {
+    "ms": 26520,
+    "dur": 247000,
+    "conf": "medium",
+    "why": "5-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "moneyfornothing|direstraits": {
+    "ms": 152260,
+    "dur": 506000,
+    "conf": "low",
+    "why": "4-line block repeats 4 times but does not contain the title"
+  },
+  "money|pinkfloyd": {
+    "ms": 16140,
+    "dur": 383000,
+    "conf": "medium",
+    "why": "title line appears 6 times but not inside a repeating multi-line block"
+  },
+  "monster|skillet": {
+    "ms": 46880,
+    "dur": 178000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "morethanafeeling|boston": {
+    "ms": 47830,
+    "dur": 285000,
+    "conf": "medium",
+    "why": "title line appears 3 times but not inside a repeating multi-line block"
+  },
+  "motownphilly|boyziimen": {
+    "ms": 22380,
+    "dur": 235000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "moveslikejagger|maroon5featuringchristinaaguilera": {
+    "ms": 48280,
+    "dur": 201000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "moveyourfeet|juniorsenior": {
+    "ms": 5380,
+    "dur": 182000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "mrbluesky|electriclightorchestra": {
+    "ms": 47080,
+    "dur": 304000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "mrbrightside|thekillers": {
+    "ms": 68340,
+    "dur": 222000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "mrvain|culturebeat": {
+    "ms": 27220,
+    "dur": 337000,
+    "conf": "high",
+    "why": "8-line block repeats 5 times and contains the title"
+  },
+  "msjackson|outkast": {
+    "ms": 22060,
+    "dur": 271000,
+    "conf": "high",
+    "why": "6-line block repeats 9 times and contains the title"
+  },
+  "murderonthedancefloor|sophieellisbextor": {
+    "ms": 8470,
+    "dur": 230000,
+    "conf": "medium",
+    "why": "2-line block repeats 5 times; title never appears in the lyrics"
+  },
+  "musicsoundsbetterwithyou|stardust": {
+    "ms": 60480,
+    "dur": 403000,
+    "conf": "high",
+    "why": "3-line block repeats 7 times and contains the title"
+  },
+  "myboo|usheraliciakeys": {
+    "ms": 54530,
+    "dur": 223000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "myhappyending|avrillavigne": {
+    "ms": 55510,
+    "dur": 242000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "myheartwillgoon|celinedion": {
+    "ms": 76790,
+    "dur": 281000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "myimmortal|evanescence": {
+    "ms": 52820,
+    "dur": 263000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "mynameis|eminem": {
+    "ms": 0,
+    "dur": 268000,
+    "conf": "high",
+    "why": "8-line block repeats 14 times and contains the title"
+  },
+  "mysacrifice|creed": {
+    "ms": 64130,
+    "dur": 295000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "nasty|janetjackson": {
+    "ms": 55400,
+    "dur": 244000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "needyounow|ladya": {
+    "ms": 65550,
+    "dur": 278000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "neverendingstory|limahl": {
+    "ms": 39220,
+    "dur": 213000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "nevergonnagiveyouup|rickastley": {
+    "ms": 41620,
+    "dur": 214000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "nevertoomuch|luthervandross": {
+    "ms": 93750,
+    "dur": 231000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "nights|frankocean": {
+    "ms": 118370,
+    "dur": 307000,
+    "conf": "low",
+    "why": "6-line block repeats only 2 times and does not contain the title"
+  },
+  "nobodywantstobelonelywithchristinaaguilera|rickymartinchristinaaguilera": {
+    "ms": 46950,
+    "dur": 250000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "nodiggity|blackstreetfeatdrdre": {
+    "ms": 85900,
+    "dur": 305000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "noeasywayoutfromrockyivsoundtrack|roberttepper": {
+    "ms": 70540,
+    "dur": 262000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "noscrubs|tlc": {
+    "ms": 29520,
+    "dur": 214000,
+    "conf": "high",
+    "why": "8-line block repeats 9 times and contains the title"
+  },
+  "novemberrain|gunsnroses": {
+    "ms": 113180,
+    "dur": 536000,
+    "conf": "medium",
+    "why": "title line appears 3 times but not inside a repeating multi-line block"
+  },
+  "nowomannocry|bobmarleythewailers": {
+    "ms": 28340,
+    "dur": 431000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "numb|linkinpark": {
+    "ms": 50360,
+    "dur": 186000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "often|theweeknd": {
+    "ms": 70250,
+    "dur": 249000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "ohsherrie|steveperry": {
+    "ms": 49700,
+    "dur": 229000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "onceinalifetime2005remaster|talkingheads": {
+    "ms": 52580,
+    "dur": 259000,
+    "conf": "high",
+    "why": "3-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "onelastbreath|creed": {
+    "ms": 34600,
+    "dur": 238000,
+    "conf": "medium",
+    "why": "6-line block repeats 2 times and contains the title"
+  },
+  "onemomentintime|whitneyhouston": {
+    "ms": 82670,
+    "dur": 285000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "onemoretime|daftpunk": {
+    "ms": 62260,
+    "dur": 320000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "onenightinbangkokradioeditfromchessremastered2016|murrayhead": {
+    "ms": 27320,
+    "dur": 193489,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "oneofthesenights|eagles": {
+    "ms": 78170,
+    "dur": 291000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "one|metallica": {
+    "ms": 131800,
+    "dur": 447000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times and does not contain the title"
+  },
+  "onlygirlintheworld|rihanna": {
+    "ms": 43340,
+    "dur": 235912,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "onthefloor|jenniferlopezfeatpitbull": {
+    "ms": 96110,
+    "dur": 218000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "oopsididitagain|britneyspears": {
+    "ms": 48880,
+    "dur": 211000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "ordinary|alexwarren": {
+    "ms": 36320,
+    "dur": 187000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "orinocoflow|enya": {
+    "ms": 69750,
+    "dur": 266000,
+    "conf": "low",
+    "why": "2-line block repeats only 2 times and does not contain the title"
+  },
+  "ourhouse|madness": {
+    "ms": 42700,
+    "dur": 204000,
+    "conf": "high",
+    "why": "2-line block repeats 7 times and contains the title"
+  },
+  "ownerofalonelyheart|yes": {
+    "ms": 54330,
+    "dur": 269000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "oxymoron|zebragiraffe": {
+    "ms": 53500,
+    "dur": 232000,
+    "conf": "medium",
+    "why": "7-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "paidmydues|anastacia": {
+    "ms": 48550,
+    "dur": 201000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "papadontpreach|madonna": {
+    "ms": 77600,
+    "dur": 269000,
+    "conf": "high",
+    "why": "7-line block repeats 5 times and contains the title"
+  },
+  "papawasarollinstone|thetemptations": {
+    "ms": 147550,
+    "dur": 418000,
+    "conf": "high",
+    "why": "6-line block repeats 7 times and contains the title"
+  },
+  "partyintheusa|mileycyrus": {
+    "ms": 58660,
+    "dur": 202000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "partyrockanthem|lmfaofeaturinglaurenbennettandgoonrock": {
+    "ms": 165660,
+    "dur": 263000,
+    "conf": "medium",
+    "why": "2-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "personaljesus|depechemode": {
+    "ms": 19780,
+    "dur": 225000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "photograph2020remaster|nickelback": {
+    "ms": 110,
+    "dur": 259000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "pianoman|billyjoel": {
+    "ms": 84620,
+    "dur": 339000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "pocketfulofsunshine|natashabedingfield": {
+    "ms": 7100,
+    "dur": 203000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "poison|bellbivdevoe": {
+    "ms": 157960,
+    "dur": 262000,
+    "conf": "high",
+    "why": "7-line block repeats 5 times and contains the title"
+  },
+  "pokerface|ladygaga": {
+    "ms": 57450,
+    "dur": 237000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "pony|ginuwine": {
+    "ms": 52320,
+    "dur": 252000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "popular|theweekndfeatmadonnaplayboicarti": {
+    "ms": 57380,
+    "dur": 215000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "positions|arianagrande": {
+    "ms": 30230,
+    "dur": 172000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "poursomesugaronme|defleppard": {
+    "ms": 86790,
+    "dur": 267000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "promiscuous|nellyfurtadofeattimbaland": {
+    "ms": 35650,
+    "dur": 242000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "psychosocial|slipknot": {
+    "ms": 80840,
+    "dur": 284000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "pumpedupkicks|fosterthepeople": {
+    "ms": 62350,
+    "dur": 221000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "pumpit|theblackeyedpeas": {
+    "ms": 15920,
+    "dur": 213000,
+    "conf": "high",
+    "why": "3-line block repeats 7 times and contains the title"
+  },
+  "pumpupthejam|technotronic": {
+    "ms": 14350,
+    "dur": 216000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "purplerain|princeandtherevolution": {
+    "ms": 40790,
+    "dur": 522000,
+    "conf": "medium",
+    "why": "title line appears 14 times but not inside a repeating multi-line block"
+  },
+  "pyramids|frankocean": {
+    "ms": 319390,
+    "dur": 593000,
+    "conf": "high",
+    "why": "8-line block repeats 8 times and contains the title"
+  },
+  "radio|robbiewilliams": {
+    "ms": 49400,
+    "dur": 231000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "rapgod|eminem": {
+    "ms": 24160,
+    "dur": 364000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "rasputin|boneym": {
+    "ms": 78770,
+    "dur": 266000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "ratherbe|cleanbanditfeaturingjessglynne": {
+    "ms": 74720,
+    "dur": 228000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "redbone|childishgambino": {
+    "ms": 75890,
+    "dur": 327000,
+    "conf": "medium",
+    "why": "2-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "rehab|amywinehouse": {
+    "ms": 70,
+    "dur": 215000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "rememberthetime|michaeljackson": {
+    "ms": 52750,
+    "dur": 239000,
+    "conf": "high",
+    "why": "7-line block repeats 6 times and contains the title"
+  },
+  "renegade|daughtry": {
+    "ms": 58250,
+    "dur": 216000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "returnofthemack|markmorrison": {
+    "ms": 58540,
+    "dur": 212000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title"
+  },
+  "rhinestonecowboy|glencampbell": {
+    "ms": 51520,
+    "dur": 194000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "rhythmisadancer|snap": {
+    "ms": 29830,
+    "dur": 221000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "rhythmisgonnagetyou|miamisoundmachine": {
+    "ms": 80350,
+    "dur": 236000,
+    "conf": "high",
+    "why": "2-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "rhythmofthenight|debarge": {
+    "ms": 91240,
+    "dur": 229000,
+    "conf": "low",
+    "why": "3-line block repeats only 2 times and does not contain the title"
+  },
+  "rio2009remaster|duranduran": {
+    "ms": 68270,
+    "dur": 337000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "rockdj|robbiewilliams": {
+    "ms": 44160,
+    "dur": 259000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "rocketman|eltonjohn": {
+    "ms": 69350,
+    "dur": 282000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "rockstar2020remaster|nickelback": {
+    "ms": 61470,
+    "dur": 256000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "rockyourbaby|georgemccrae": {
+    "ms": 35700,
+    "dur": 200000,
+    "conf": "high",
+    "why": "4-line block repeats 8 times and contains the title"
+  },
+  "rockyourbody|justintimberlake": {
+    "ms": 12540,
+    "dur": 267000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "rollinginthedeep|adele": {
+    "ms": 66430,
+    "dur": 228000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "roundround|sugababes": {
+    "ms": 6120,
+    "dur": 236000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "roxanne|thepolice": {
+    "ms": 16010,
+    "dur": 192000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title"
+  },
+  "runaway|bonjovi": {
+    "ms": 55700,
+    "dur": 231000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "runningupthathilladealwithgod|katebush": {
+    "ms": 56020,
+    "dur": 298000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "safeandsound|capitalcities": {
+    "ms": 29780,
+    "dur": 193000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "savetonight|eagleeyecherry": {
+    "ms": 49050,
+    "dur": 243000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "saveyourtears|theweeknd": {
+    "ms": 57320,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "savingallmyloveforyou|whitneyhouston": {
+    "ms": 40240,
+    "dur": 238000,
+    "conf": "medium",
+    "why": "title line appears 4 times but not inside a repeating multi-line block"
+  },
+  "sayitright|nellyfurtado": {
+    "ms": 63780,
+    "dur": 223000,
+    "conf": "low",
+    "why": "3-line block repeats only 2 times and does not contain the title"
+  },
+  "saymyname|destinyschild": {
+    "ms": 460,
+    "dur": 271000,
+    "conf": "high",
+    "why": "8-line block repeats 10 times and contains the title"
+  },
+  "scartissue|redhotchilipeppers": {
+    "ms": 9520,
+    "dur": 216000,
+    "conf": "medium",
+    "why": "6-line block repeats 2 times and contains the title"
+  },
+  "secrets|onerepublic": {
+    "ms": 46880,
+    "dur": 225000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "seeyouagain|wizkhalifafeaturingcharlieputh": {
+    "ms": 9310,
+    "dur": 230000,
+    "conf": "medium",
+    "why": "5-line block repeats 2 times and contains the title"
+  },
+  "selfcontrol|laurabranigan": {
+    "ms": 201210,
+    "dur": 246000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "separatewaysworldsapart2023remaster|journey": {
+    "ms": 83860,
+    "dur": 325000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "september|earthwindfire": {
+    "ms": 53010,
+    "dur": 216000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "sexonfire|kingsofleon": {
+    "ms": 49450,
+    "dur": 203000,
+    "conf": "medium",
+    "why": "2-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "sexualhealing|marvingaye": {
+    "ms": 36570,
+    "dur": 238000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "sexyback|justintimberlake": {
+    "ms": 46020,
+    "dur": 243000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "shakeitoff|taylorswift": {
+    "ms": 46330,
+    "dur": 219000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "shapeofmyheart|backstreetboys": {
+    "ms": 47410,
+    "dur": 230000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "shapeofyou|edsheeran": {
+    "ms": 49430,
+    "dur": 234000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "shealwaysgetswhatshewants|primecircle": {
+    "ms": 28170,
+    "dur": 224000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "shedrivesmecrazy|fineyoungcannibals": {
+    "ms": 56270,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "shessohigh|talbachman": {
+    "ms": 38090,
+    "dur": 225000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "shewillbelovedradiomix|maroon5": {
+    "ms": 63650,
+    "dur": 257000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "shouldistayorshouldigo|theclash": {
+    "ms": 142920,
+    "dur": 188000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "sickandtired|anastacia": {
+    "ms": 56980,
+    "dur": 210000,
+    "conf": "low",
+    "why": "4-line block repeats 4 times but does not contain the title"
+  },
+  "sinceubeengone|kellyclarkson": {
+    "ms": 10120,
+    "dur": 189000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "sk8erboi|avrillavigne": {
+    "ms": 38890,
+    "dur": 204000,
+    "conf": "medium",
+    "why": "3-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "skyfall|adele": {
+    "ms": 103300,
+    "dur": 286000,
+    "conf": "low",
+    "why": "2-line block repeats 3 times but does not contain the title"
+  },
+  "sledgehammer|petergabriel": {
+    "ms": 96050,
+    "dur": 297000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "slowdancinginthedark|joji": {
+    "ms": 59410,
+    "dur": 209000,
+    "conf": "low",
+    "why": "8-line block repeats only 2 times and does not contain the title"
+  },
+  "smackthat|akonfeateminem": {
+    "ms": 30890,
+    "dur": 213000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "smellsliketeenspirit|nirvana": {
+    "ms": 48540,
+    "dur": 301000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "smokeonthewater|deeppurple": {
+    "ms": 83100,
+    "dur": 342000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "smoothcriminal|alienantfarm": {
+    "ms": 69860,
+    "dur": 209000,
+    "conf": "high",
+    "why": "4-line block repeats 10 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "smoothfeatrobthomas|santanarobthomas": {
+    "ms": 78570,
+    "dur": 295000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "smoothoperator|sade": {
+    "ms": 82830,
+    "dur": 256000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title"
+  },
+  "smooth|santanafeatrobthomas": {
+    "ms": 78570,
+    "dur": 295000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "snowheyoh|redhotchilipeppers": {
+    "ms": 105120,
+    "dur": 335000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "somebodyswatchingmesingleversion|rockwell": {
+    "ms": 47720,
+    "dur": 238000,
+    "conf": "high",
+    "why": "4-line block repeats 6 times and contains the title"
+  },
+  "somebodythatiusedtoknow|gotyefeaturingkimbra": {
+    "ms": 106740,
+    "dur": 245000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "somebodytoldme|thekillers": {
+    "ms": 63660,
+    "dur": 197000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "somebodytolove|queen": {
+    "ms": 179750,
+    "dur": 297000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "someday|nickelback": {
+    "ms": 25420,
+    "dur": 207000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "someonelikeyou|adele": {
+    "ms": 72570,
+    "dur": 285000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "something|lasgo": {
+    "ms": 67690,
+    "dur": 221000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "sometimes|erasure": {
+    "ms": 46750,
+    "dur": 220000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title"
+  },
+  "somewhereibelong|linkinpark": {
+    "ms": 77790,
+    "dur": 216000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "somewhereonlyweknow|keane": {
+    "ms": 45410,
+    "dur": 237000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "song2|blur": {
+    "ms": 42480,
+    "dur": 121000,
+    "conf": "low",
+    "why": "8-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "sorryseemstobethehardestword|blueeltonjohn": {
+    "ms": 54350,
+    "dur": 208000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "stairwaytoheaven|ledzeppelin": {
+    "ms": 57820,
+    "dur": 483000,
+    "conf": "medium",
+    "why": "title line appears 3 times but not inside a repeating multi-line block"
+  },
+  "stan|eminemfeatdido": {
+    "ms": 92290,
+    "dur": 404000,
+    "conf": "medium",
+    "why": "title line appears 5 times but not inside a repeating multi-line block"
+  },
+  "starman|davidbowie": {
+    "ms": 63660,
+    "dur": 254000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "stayinalive|beegees": {
+    "ms": 33690,
+    "dur": 285000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "staywithme|mikimatsubara": {
+    "ms": 59580,
+    "dur": 312000,
+    "conf": "medium",
+    "why": "title line appears 7 times but not inside a repeating multi-line block"
+  },
+  "stelmosfireanniversaryedition|johnparr": {
+    "ms": 79760,
+    "dur": 256000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "stressedout|twentyonepilots": {
+    "ms": 47740,
+    "dur": 202000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "strongerwhatdoesntkillyou|kellyclarkson": {
+    "ms": 40380,
+    "dur": 221000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "stronger|kanyewest": {
+    "ms": 3420,
+    "dur": 312000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "stuckwithyou|hueylewisthenews": {
+    "ms": 65060,
+    "dur": 270000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title"
+  },
+  "sugarweregoindown|falloutboy": {
+    "ms": 59370,
+    "dur": 229000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "sugar|maroon5": {
+    "ms": 37870,
+    "dur": 236000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "summerof69|bryanadams": {
+    "ms": 78560,
+    "dur": 217000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "sunflower|postmaloneswaelee": {
+    "ms": 71770,
+    "dur": 158000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "sunglassesatnight|coreyhart": {
+    "ms": 29530,
+    "dur": 320000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "superfreak|rickjames": {
+    "ms": 42490,
+    "dur": 205000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "superstar|jamelia": {
+    "ms": 50890,
+    "dur": 215000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "superstition|steviewonder": {
+    "ms": 72740,
+    "dur": 266000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "supreme|robbiewilliams": {
+    "ms": 62620,
+    "dur": 258000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "survivor|destinyschild": {
+    "ms": 46760,
+    "dur": 254000,
+    "conf": "high",
+    "why": "8-line block repeats 9 times and contains the title"
+  },
+  "sweetcaroline|neildiamond": {
+    "ms": 62950,
+    "dur": 204000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "sweetchildomine|gunsnroses": {
+    "ms": 74670,
+    "dur": 356000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "sweetdreamsaremadeofthis2005remaster|eurythmicsannielennoxdavestewart": {
+    "ms": 7140,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title"
+  },
+  "sweetdreamsaremadeofthis|eurythmics": {
+    "ms": 6670,
+    "dur": 217000,
+    "conf": "high",
+    "why": "4-line block repeats 7 times and contains the title"
+  },
+  "sweethomealabama|lynyrdskynyrd": {
+    "ms": 70790,
+    "dur": 284000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "takemehomecountryroads|johndenver": {
+    "ms": 28130,
+    "dur": 192000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "takemeout|franzferdinand": {
+    "ms": 83350,
+    "dur": 237000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "takeonme|aha": {
+    "ms": 49840,
+    "dur": 225000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "tarzanboy|baltimora": {
+    "ms": 86650,
+    "dur": 230000,
+    "conf": "low",
+    "why": "7-line block repeats 12 times but does not contain the title"
+  },
+  "teenagedirtbag|wheatus": {
+    "ms": 38460,
+    "dur": 242000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "tellittomyheart|taylordayne": {
+    "ms": 47360,
+    "dur": 220000,
+    "conf": "high",
+    "why": "6-line block repeats 5 times and contains the title"
+  },
+  "temperature|seanpaul": {
+    "ms": 13530,
+    "dur": 219000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "thatsthewayilikeit|kcandthesunshineband": {
+    "ms": 15800,
+    "dur": 185000,
+    "conf": "high",
+    "why": "8-line block repeats 16 times and contains the title"
+  },
+  "thatswhatilike|brunomars": {
+    "ms": 50750,
+    "dur": 207000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "thatswhatyouget|paramore": {
+    "ms": 41310,
+    "dur": 220000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "thebestedit|tinaturner": {
+    "ms": 61600,
+    "dur": 250000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "theboysofsummer|theataris": {
+    "ms": 54700,
+    "dur": 258000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "thedance|garthbrooks": {
+    "ms": 82720,
+    "dur": 220000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "thefinalcountdown|europe": {
+    "ms": 266800,
+    "dur": 310000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "thehills|theweeknd": {
+    "ms": 41500,
+    "dur": 242000,
+    "conf": "low",
+    "why": "8-line block repeats 3 times but does not contain the title"
+  },
+  "thejoker|stevemillerband": {
+    "ms": 46450,
+    "dur": 265000,
+    "conf": "medium",
+    "why": "5-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "theketchupsongaserejespanglishversion|lasketchup": {
+    "ms": 35500,
+    "dur": 213000,
+    "conf": "medium",
+    "why": "6-line block repeats 8 times; title never appears in the lyrics"
+  },
+  "thekidsarentalright|theoffspring": {
+    "ms": 56140,
+    "dur": 180000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "thekill|thirtysecondstomars": {
+    "ms": 35900,
+    "dur": 233000,
+    "conf": "medium",
+    "why": "3-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "thekingofwishfulthinking|gowest": {
+    "ms": 42980,
+    "dur": 242000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "themiddle|jimmyeatworld": {
+    "ms": 33320,
+    "dur": 166000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "theoneandonly|chesneyhawkes": {
+    "ms": 56170,
+    "dur": 224000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "thepoweroflove|hueylewisthenews": {
+    "ms": 135040,
+    "dur": 234000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "therealslimshady|eminem": {
+    "ms": 85470,
+    "dur": 284000,
+    "conf": "high",
+    "why": "6-line block repeats 7 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "thereason|hoobastank": {
+    "ms": 47230,
+    "dur": 233000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "thereflexsingleversion2010remaster|duranduran": {
+    "ms": 90950,
+    "dur": 267000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "thesafetydance|menwithouthats": {
+    "ms": 78400,
+    "dur": 165000,
+    "conf": "high",
+    "why": "2-line block repeats 7 times and contains the title"
+  },
+  "thescientist|coldplay": {
+    "ms": 78290,
+    "dur": 309000,
+    "conf": "low",
+    "why": "4-line block repeats only 2 times; title never appears in the lyrics"
+  },
+  "thesewords|natashabedingfield": {
+    "ms": 93390,
+    "dur": 216000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "theshowmustgoon|queen": {
+    "ms": 62980,
+    "dur": 264000,
+    "conf": "medium",
+    "why": "4-line block repeats 2 times and contains the title"
+  },
+  "thesign|aceofbase": {
+    "ms": 50810,
+    "dur": 191000,
+    "conf": "high",
+    "why": "7-line block repeats 5 times and contains the title"
+  },
+  "thetideishighradiomix|atomickitten": {
+    "ms": 7560,
+    "dur": 207000,
+    "conf": "high",
+    "why": "2-line block repeats 8 times and contains the title"
+  },
+  "thinkinboutyou|frankocean": {
+    "ms": 20700,
+    "dur": 201000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "thisishowwedoit|montelljordan": {
+    "ms": 10980,
+    "dur": 277000,
+    "conf": "medium",
+    "why": "title line appears 6 times but not inside a repeating multi-line block"
+  },
+  "thisiswar|thirtysecondstomars": {
+    "ms": 61930,
+    "dur": 327000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "thislove|maroon5": {
+    "ms": 39520,
+    "dur": 207000,
+    "conf": "high",
+    "why": "8-line block repeats 5 times and contains the title"
+  },
+  "thnksfrthmmrs|falloutboy": {
+    "ms": 29530,
+    "dur": 204000,
+    "conf": "medium",
+    "why": "8-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "threelittlebirds|bobmarleyandthewailers": {
+    "ms": 44160,
+    "dur": 181000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "thunderstruck|acdc": {
+    "ms": 164290,
+    "dur": 293000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "tiktok|kesha": {
+    "ms": 39980,
+    "dur": 200000,
+    "conf": "medium",
+    "why": "8-line block repeats 6 times; title never appears in the lyrics"
+  },
+  "tillicollapse|eminem": {
+    "ms": 99680,
+    "dur": 298000,
+    "conf": "low",
+    "why": "8-line block repeats 6 times but does not contain the title"
+  },
+  "titimepregunto|badbunny": {
+    "ms": 8530,
+    "dur": 244000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "tomsawyer|rush": {
+    "ms": 86410,
+    "dur": 277000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "tooshy|kajagoogoo": {
+    "ms": 70330,
+    "dur": 222000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "torn|natalieimbruglia": {
+    "ms": 65910,
+    "dur": 245000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "totaleclipseoftheheart|bonnietyler": {
+    "ms": 105340,
+    "dur": 268000,
+    "conf": "medium",
+    "why": "5-line block repeats 2 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "toxic|britneyspears": {
+    "ms": 55200,
+    "dur": 199000,
+    "conf": "high",
+    "why": "7-line block repeats 4 times and contains the title"
+  },
+  "truecolors|cyndilauper": {
+    "ms": 36360,
+    "dur": 228000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "tubthumping|chumbawamba": {
+    "ms": 32080,
+    "dur": 279000,
+    "conf": "medium",
+    "why": "8-line block repeats 14 times; title never appears in the lyrics"
+  },
+  "twoprinces|spindoctors": {
+    "ms": 19610,
+    "dur": 257000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "ucanttouchthis|mchammer": {
+    "ms": 0,
+    "dur": 257000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "umakemewannaradioedit|blue": {
+    "ms": 47250,
+    "dur": 222000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "umbrella|rihannafeatjayz": {
+    "ms": 71060,
+    "dur": 276000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "underneathyourclothes|shakira": {
+    "ms": 36710,
+    "dur": 224000,
+    "conf": "high",
+    "why": "6-line block repeats 4 times and contains the title"
+  },
+  "underpressure|queenanddavidbowie": {
+    "ms": 37490,
+    "dur": 245000,
+    "conf": "medium",
+    "why": "title line appears 4 times but not inside a repeating multi-line block"
+  },
+  "underthebridge|redhotchilipeppers": {
+    "ms": 85970,
+    "dur": 264000,
+    "conf": "medium",
+    "why": "4-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "unwritten|natashabedingfield": {
+    "ms": 59200,
+    "dur": 259000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "upsidedown|dianaross": {
+    "ms": 8230,
+    "dur": 246000,
+    "conf": "high",
+    "why": "3-line block repeats 5 times and contains the title"
+  },
+  "uptownfunk|markronsonfeaturingbrunomars": {
+    "ms": 173950,
+    "dur": 270000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "uptowngirlradioedit|westlife": {
+    "ms": 145970,
+    "dur": 186000,
+    "conf": "high",
+    "why": "5-line block repeats 5 times and contains the title"
+  },
+  "usesomebody|kingsofleon": {
+    "ms": 43280,
+    "dur": 231000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "vampire|oliviarodrigo": {
+    "ms": 61540,
+    "dur": 220000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "videokilledtheradiostarsingleversion|thebuggles": {
+    "ms": 48160,
+    "dur": 197000,
+    "conf": "high",
+    "why": "2-line block repeats 7 times and contains the title"
+  },
+  "videokilledtheradiostar|thebuggles": {
+    "ms": 48210,
+    "dur": 205000,
+    "conf": "high",
+    "why": "2-line block repeats 7 times and contains the title"
+  },
+  "virtualinsanity|jamiroquai": {
+    "ms": 46870,
+    "dur": 228000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "vivalavida|coldplay": {
+    "ms": 67560,
+    "dur": 242000,
+    "conf": "medium",
+    "why": "5-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "vogue|madonna": {
+    "ms": 116590,
+    "dur": 317000,
+    "conf": "medium",
+    "why": "3-line block repeats 2 times and contains the title"
+  },
+  "wakemeupbeforeyougogo|wham": {
+    "ms": 35130,
+    "dur": 231000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  },
+  "wakemeup|avicii": {
+    "ms": 37190,
+    "dur": 246000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "walkingonsunshine|katrinathewaves": {
+    "ms": 50300,
+    "dur": 239000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "walklikeanegyptian|thebangles": {
+    "ms": 33990,
+    "dur": 205000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "walkonthewildside|loureed": {
+    "ms": 32240,
+    "dur": 254000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "wannabe|spicegirls": {
+    "ms": 2790,
+    "dur": 173000,
+    "conf": "medium",
+    "why": "2-line block repeats 4 times; title never appears in the lyrics"
+  },
+  "war|edwinstarr": {
+    "ms": 4690,
+    "dur": 200000,
+    "conf": "medium",
+    "why": "2-line block repeats 2 times and contains the title"
+  },
+  "waterfalls|tlc": {
+    "ms": 77150,
+    "dur": 254000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "waterloo|abba": {
+    "ms": 43950,
+    "dur": 166000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "weak|swv": {
+    "ms": 53270,
+    "dur": 292000,
+    "conf": "high",
+    "why": "8-line block repeats 3 times and contains the title"
+  },
+  "webuiltthiscity|starship": {
+    "ms": 0,
+    "dur": 295000,
+    "conf": "high",
+    "why": "4-line block repeats 9 times and contains the title"
+  },
+  "wecloseoureyes|gowest": {
+    "ms": 58430,
+    "dur": 222000,
+    "conf": "high",
+    "why": "3-line block repeats 4 times and contains the title"
+  },
+  "wedidntstartthefire|billyjoel": {
+    "ms": 65040,
+    "dur": 291000,
+    "conf": "high",
+    "why": "4-line block repeats 8 times and contains the title"
+  },
+  "wedonthavetotakeourclothesoff|jermainestewart": {
+    "ms": 71760,
+    "dur": 243566,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "welcometotheblackparade|mychemicalromance": {
+    "ms": 134700,
+    "dur": 311000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "westendgirls|petshopboys": {
+    "ms": 56830,
+    "dur": 286000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title"
+  },
+  "wewillrockyou|queen": {
+    "ms": 23420,
+    "dur": 121000,
+    "conf": "medium",
+    "why": "title line appears 8 times but not inside a repeating multi-line block"
+  },
+  "whatgoesaroundcomesaroundinterlude|justintimberlake": {
+    "ms": 92480,
+    "dur": 449000,
+    "conf": "high",
+    "why": "8-line block repeats 8 times and contains the title"
+  },
+  "whatislove|haddaway": {
+    "ms": 0,
+    "dur": 271000,
+    "conf": "high",
+    "why": "5-line block repeats 10 times and contains the title"
+  },
+  "whativedone|linkinpark": {
+    "ms": 63270,
+    "dur": 206000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "whatmakesyoubeautiful|onedirection": {
+    "ms": 51320,
+    "dur": 200000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "whatsgoingon|marvingaye": {
+    "ms": 86990,
+    "dur": 233000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "whatslovegottodowithit|tinaturner": {
+    "ms": 50880,
+    "dur": 230000,
+    "conf": "medium",
+    "why": "4-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "whatsup|4nonblondes": {
+    "ms": 84340,
+    "dur": 295000,
+    "conf": "medium",
+    "why": "6-line block repeats 5 times; title never appears in the lyrics"
+  },
+  "whatthehell|avrillavigne": {
+    "ms": 43210,
+    "dur": 221000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "whatyouwaitingfor|gwenstefani": {
+    "ms": 54700,
+    "dur": 221000,
+    "conf": "high",
+    "why": "4-line block repeats 5 times and contains the title"
+  },
+  "whendovescry|princeandtherevolution": {
+    "ms": 89330,
+    "dur": 353476,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "wheneverwherever|shakira": {
+    "ms": 41960,
+    "dur": 197000,
+    "conf": "high",
+    "why": "5-line block repeats 4 times and contains the title"
+  },
+  "whereisthelove|blackeyedpeas": {
+    "ms": 79160,
+    "dur": 273000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "whereveryouwillgo|thecalling": {
+    "ms": 42200,
+    "dur": 209000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title"
+  },
+  "whispersinthedark|skillet": {
+    "ms": 60050,
+    "dur": 204000,
+    "conf": "high",
+    "why": "6-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "whiteflag|dido": {
+    "ms": 77420,
+    "dur": 240000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "wholeagain|atomickitten": {
+    "ms": 43230,
+    "dur": 185000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "wholetthedogsout|bahamen": {
+    "ms": 0,
+    "dur": 198000,
+    "conf": "high",
+    "why": "7-line block repeats 14 times and contains the title"
+  },
+  "whosgoinghomewithyoutonight|trapt": {
+    "ms": 48120,
+    "dur": 215000,
+    "conf": "high",
+    "why": "6-line block repeats 3 times and contains the title"
+  },
+  "windofchange|scorpions": {
+    "ms": 172520,
+    "dur": 312000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "witharmswideopen|creed": {
+    "ms": 45370,
+    "dur": 275000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "withorwithoutyou|u2": {
+    "ms": 58540,
+    "dur": 296000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title"
+  },
+  "withoutme|eminem": {
+    "ms": 95380,
+    "dur": 290000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "withoutme|halsey": {
+    "ms": 54380,
+    "dur": 202000,
+    "conf": "high",
+    "why": "7-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "wonderwallremastered|oasis": {
+    "ms": 101600,
+    "dur": 259000,
+    "conf": "medium",
+    "why": "title line appears 3 times but not inside a repeating multi-line block"
+  },
+  "wonderwall|oasis": {
+    "ms": 90490,
+    "dur": 259000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "wordofmouth|mikethemechanics": {
+    "ms": 66580,
+    "dur": 236000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title"
+  },
+  "workingfortheweekend|loverboy": {
+    "ms": 40490,
+    "dur": 222000,
+    "conf": "medium",
+    "why": "8-line block repeats 2 times and contains the title"
+  },
+  "work|jimmyeatworld": {
+    "ms": 40240,
+    "dur": 204000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "wutheringheights|katebush": {
+    "ms": 43370,
+    "dur": 269000,
+    "conf": "medium",
+    "why": "7-line block repeats 2 times and contains the title"
+  },
+  "yeah|usherfeatliljonludacris": {
+    "ms": 9560,
+    "dur": 252000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "year3000|busted": {
+    "ms": 38260,
+    "dur": 196000,
+    "conf": "high",
+    "why": "4-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "yellow|coldplay": {
+    "ms": 45510,
+    "dur": 267000,
+    "conf": "medium",
+    "why": "title line appears 5 times but not inside a repeating multi-line block"
+  },
+  "ymca|villagepeople": {
+    "ms": 43000,
+    "dur": 226000,
+    "conf": "high",
+    "why": "5-line block repeats 5 times and contains the title"
+  },
+  "youaintseennothingyet|bachmanturneroverdrive": {
+    "ms": 43230,
+    "dur": 235000,
+    "conf": "high",
+    "why": "3-line block repeats 3 times and contains the title"
+  },
+  "youarenotalone|michaeljackson": {
+    "ms": 62160,
+    "dur": 346000,
+    "conf": "high",
+    "why": "8-line block repeats 6 times and contains the title"
+  },
+  "youfoundme|thefray": {
+    "ms": 54960,
+    "dur": 242000,
+    "conf": "high",
+    "why": "8-line block repeats 4 times and contains the title"
+  },
+  "yougetwhatyougive|newradicals": {
+    "ms": 80870,
+    "dur": 301000,
+    "conf": "medium",
+    "why": "8-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "yougiveloveabadname|bonjovi": {
+    "ms": 61070,
+    "dur": 223000,
+    "conf": "high",
+    "why": "5-line block repeats 3 times and contains the title"
+  },
+  "youkeepmehanginon|kimwilde": {
+    "ms": 18700,
+    "dur": 255000,
+    "conf": "low",
+    "why": "4-line block repeats 4 times but does not contain the title"
+  },
+  "youmakemydreamscometrue|darylhalljohnoates": {
+    "ms": 81400,
+    "dur": 191000,
+    "conf": "high",
+    "why": "2-line block repeats 4 times and contains the title"
+  },
+  "youngheartsrunfree|candistaton": {
+    "ms": 51520,
+    "dur": 249000,
+    "conf": "high",
+    "why": "6-line block repeats 5 times and contains the title"
+  },
+  "yououghtaknow|alanismorissette": {
+    "ms": 59120,
+    "dur": 249000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "youresovain|carlysimon": {
+    "ms": 51410,
+    "dur": 258000,
+    "conf": "high",
+    "why": "5-line block repeats 6 times and contains the title"
+  },
+  "yourlove|theoutfield": {
+    "ms": 21460,
+    "dur": 223000,
+    "conf": "high",
+    "why": "2-line block repeats 5 times and contains the title"
+  },
+  "yoursong|eltonjohn": {
+    "ms": 85870,
+    "dur": 242000,
+    "conf": "low",
+    "why": "4-line block repeats 3 times but does not contain the title"
+  },
+  "youspinmeroundlikearecord|deadoralive": {
+    "ms": 28980,
+    "dur": 199000,
+    "conf": "medium",
+    "why": "3-line block repeats 3 times; title never appears in the lyrics"
+  },
+  "youthofthenation|pod": {
+    "ms": 70180,
+    "dur": 256000,
+    "conf": "high",
+    "why": "8-line block repeats 7 times and contains the title"
+  },
+  "you|lloydfeatlilwayne": {
+    "ms": 80690,
+    "dur": 273000,
+    "conf": "high",
+    "why": "2-line block repeats 3 times and contains the title (started at the title line, skipping a pre-chorus)"
+  },
+  "zombie|thecranberries": {
+    "ms": 93140,
+    "dur": 306000,
+    "conf": "high",
+    "why": "4-line block repeats 4 times and contains the title"
+  }
+}

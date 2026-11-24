@@ -230,6 +230,19 @@ async function main() {
     hooks[song.key] = { ms: res.ms, dur: rep.durationMs, conf: res.confidence, why };
   }
   if (!ONLY && LIMIT === Infinity) {
+    // Reviewed corrections: tools/hook-overrides.json is { key: { lineMs: <ms of a real lyric line> | null, note } }.
+    // lineMs must be the timestamp of a line in the chosen recording; null drops the hook.
+    const ovFile = path.join(OUT_DIR, "hook-overrides.json");
+    if (fs.existsSync(ovFile)) {
+      for (const [key, ov] of Object.entries(JSON.parse(fs.readFileSync(ovFile, "utf8")))) {
+        const rep = report[key];
+        if (!rep) { console.error("override for unknown song: " + key); continue; }
+        if (ov.lineMs == null) { delete hooks[key]; rep.override = { dropped: true, note: ov.note }; continue; }
+        if (!rep.durationMs) { console.error("override for a song with no recording: " + key); continue; }
+        hooks[key] = { ms: Math.max(0, ov.lineMs - 1500), dur: rep.durationMs, conf: "reviewed", why: ov.note || "set in review" };
+        rep.override = { lineMs: ov.lineMs, note: ov.note };
+      }
+    }
     fs.writeFileSync(path.join(OUT_DIR, "hooks.json"), JSON.stringify(sortObj(hooks), null, 2) + "\n");
     fs.writeFileSync(path.join(OUT_DIR, "hooks-report.json"), JSON.stringify(sortObj(report), null, 2) + "\n");
   } else {

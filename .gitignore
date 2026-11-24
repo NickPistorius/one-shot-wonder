@@ -3,3 +3,4 @@ tools/.cache/
 .env
 *.local
 .playwright-mcp/
+tools/hooks-report.json

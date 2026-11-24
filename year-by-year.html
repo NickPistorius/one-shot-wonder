@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0F3326">
-<title>Year by Year</title>
+<title>One Shot Wonder</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
@@ -99,7 +99,7 @@ ol li{margin:0.3rem 0}
 <body>
 <main class="app">
   <div class="top">
-    <span class="name">Year by Year</span>
+    <span class="name">One Shot Wonder</span>
     <button class="icon-btn" id="openSettings" aria-label="Settings">
       <svg viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h2M10 12h10M4 18h8M16 18h4"/><circle cx="16" cy="6" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>
     </button>
@@ -504,7 +504,7 @@ function render(){
   $("action").textContent=busy?"Loading…":playing?(now.limit?"Playing "+clipName(now.limit):"Playing"):now.paused?"Paused":cfg.game?"Play "+clipName(LADDER[step]):"Play";
   $("source").textContent=spReady()?(SONGS===BUILTIN?"Full songs play through Spotify.":"Playing your playlist “"+pl.name+"” through Spotify."):"Playing 30-second clips. Connect Spotify in settings for full songs.";
   if("mediaSession" in navigator){
-    try{navigator.mediaSession.metadata=new MediaMetadata({title:show?s[1]:"Guess the song",artist:show?s[2]:String(y),album:"Year by Year"})}catch(e){}
+    try{navigator.mediaSession.metadata=new MediaMetadata({title:show?s[1]:"Guess the song",artist:show?s[2]:String(y),album:"One Shot Wonder"})}catch(e){}
   }
 }
 function renderSettings(){

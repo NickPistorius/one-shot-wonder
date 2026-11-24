@@ -258,14 +258,16 @@ const firstArtist=a=>a.split(/,|&|\s+(?:and|feat\.?|featuring|with)\s+/i)[0].tri
 const searchArtist=s=>s[4]?s[2].split(", ")[0]:fullArtist(s[2]);   // playlist songs list every artist
 const noThe=s=>norm(s).replace(/^the/,"");
 // other recordings of a song (worth -2) and other cuts of the same recording (worth -1)
-const OTHER=/karaoke|tribute|made famous|cover version|originally performed|instrumental|\blive\b|re-?recorded|remix|\bmix\b|\bdub\b|rework|refix|acoustic|\bdemo\b|a cappella|stripped|itunes originals/i,FAKE=/karaoke|tribute|made famous|originally performed/i,CUT=/\b(?:edit|edited|version|extended|alternate|radio)\b/i;
+const OTHER=/karaoke|tribute|made famous|cover version|originally performed|instrumental|\blive\b|re-?recorded|remix|\bmix\b|\bdub\b|rework|refix|acoustic|\bdemo\b|a cappella|stripped|itunes originals|sped up|slowed|nightcore|performance|\bcover\b|\d-bit|phonk/i,FAKE=/karaoke|tribute|made famous|originally performed|kidz bop/i,CUT=/\b(?:edit|edited|version|extended|alternate|radio)\b/i;
 function pick(cands,song){
   const t=norm(cleanTitle(song[1])),t2=norm(song[1]),a=noThe(firstArtist(song[2]));let best=null,top=0;
   for(const c of cands){
-    const n=norm(cleanTitle(c.name)),n2=norm(c.name),ar=noThe(c.artist),both=c.name+" "+(c.album||"");let sc=0;
+    const n=norm(cleanTitle(c.name)),n2=norm(c.name),ar=noThe(c.artist),extra=(c.name+" "+(c.album||"")).toLowerCase().split(cleanTitle(song[1]).toLowerCase()).join(" "),own=song[1].slice(cleanTitle(song[1]).length);let sc=0;
     if(a&&ar.startsWith(a))sc+=2;else if(a&&ar.includes(a)&&/[,&]|feat/i.test(c.artist))sc+=1;
+    const byThem=sc>0;
     if(n===t||n2===t2)sc+=3;else if(n.endsWith(t))sc+=2;else if(n.includes(t))sc+=1;
-    if(FAKE.test(c.artist)||(OTHER.test(both)&&!OTHER.test(song[1])))sc-=2;else if(CUT.test(c.name)&&!CUT.test(song[1]))sc-=1;
+    if(FAKE.test(c.artist)||(OTHER.test(extra)&&!OTHER.test(own)))sc-=2;else if(CUT.test(c.name)&&!CUT.test(own))sc-=1;
+    if(byThem&&song[5]&&c.ms&&Math.abs(c.ms-song[5])<=4000)sc+=1;          // same length as the playlist track
     if(sc>top){top=sc;best=c}
   }
   return top>=4?best.val:null;
@@ -294,12 +296,12 @@ function findPreview(song){
     let url=null;
     try{
       const d=await jsonp("https://itunes.apple.com/search?media=music&entity=song&limit=10&term="+term);
-      url=pick((d.results||[]).filter(r=>r.previewUrl).map(r=>({name:r.trackName||"",artist:r.artistName||"",album:r.collectionName||"",val:r.previewUrl})),song);
+      url=pick((d.results||[]).filter(r=>r.previewUrl).map(r=>({name:r.trackName||"",artist:r.artistName||"",album:r.collectionName||"",ms:r.trackTimeMillis||0,val:r.previewUrl})),song);
     }catch(e){}
     if(!url){
       try{
         const d=await jsonp("https://api.deezer.com/search?output=jsonp&limit=10&q="+term);
-        url=pick((d.data||[]).filter(r=>r.preview).map(r=>({name:r.title||"",artist:(r.artist&&r.artist.name)||"",album:(r.album&&r.album.title)||"",val:r.preview})),song);
+        url=pick((d.data||[]).filter(r=>r.preview).map(r=>({name:r.title||"",artist:(r.artist&&r.artist.name)||"",album:(r.album&&r.album.title)||"",ms:(r.duration||0)*1000,val:r.preview})),song);
       }catch(e){}
     }
     delete pvPending[key];

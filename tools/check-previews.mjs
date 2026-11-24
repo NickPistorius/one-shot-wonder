@@ -27,13 +27,15 @@ const fullArtist=a=>a.split(/\s+(?:feat\.?|featuring)\s+/i)[0];
 const searchArtist=s=>s[4]?s[2].split(", ")[0]:fullArtist(s[2]);
 const firstArtist=a=>a.split(/,|&|\s+(?:and|feat\.?|featuring|with)\s+/i)[0].trim();
 const noThe=s=>norm(s).replace(/^the/,"");
-const OTHER=/karaoke|tribute|made famous|cover version|originally performed|instrumental|\blive\b|re-?recorded|remix|\bmix\b|\bdub\b|rework|refix|acoustic|\bdemo\b|a cappella|stripped|itunes originals/i, FAKE=/karaoke|tribute|made famous|originally performed/i, CUT=/\b(?:edit|edited|version|extended|alternate|radio)\b/i;
+const OTHER=/karaoke|tribute|made famous|cover version|originally performed|instrumental|\blive\b|re-?recorded|remix|\bmix\b|\bdub\b|rework|refix|acoustic|\bdemo\b|a cappella|stripped|itunes originals|sped up|slowed|nightcore|performance|\bcover\b|\d-bit|phonk/i, FAKE=/karaoke|tribute|made famous|originally performed|kidz bop/i, CUT=/\b(?:edit|edited|version|extended|alternate|radio)\b/i;
 function score(c,song){
   const t=norm(cleanTitle(song[1])),t2=norm(song[1]),a=noThe(firstArtist(song[2]));
-  const n=norm(cleanTitle(c.name)),n2=norm(c.name),ar=noThe(c.artist),both=c.name+" "+(c.album||"");let sc=0;
+  const n=norm(cleanTitle(c.name)),n2=norm(c.name),ar=noThe(c.artist),extra=(c.name+" "+(c.album||"")).toLowerCase().split(cleanTitle(song[1]).toLowerCase()).join(" "),own=song[1].slice(cleanTitle(song[1]).length);let sc=0;
   if(a&&ar.startsWith(a))sc+=2;else if(a&&ar.includes(a)&&/[,&]|feat/i.test(c.artist))sc+=1;
+  const byThem=sc>0;
   if(n===t||n2===t2)sc+=3;else if(n.endsWith(t))sc+=2;else if(n.includes(t))sc+=1;
-  if(FAKE.test(c.artist)||(OTHER.test(both)&&!OTHER.test(song[1])))sc-=2;else if(CUT.test(c.name)&&!CUT.test(song[1]))sc-=1;
+  if(FAKE.test(c.artist)||(OTHER.test(extra)&&!OTHER.test(own)))sc-=2;else if(CUT.test(c.name)&&!CUT.test(own))sc-=1;
+  if(byThem&&song[5]&&c.durationMs&&Math.abs(c.durationMs-song[5])<=4000)sc+=1;          // same length as the playlist track
   return sc;
 }
 function pick(cands,song){

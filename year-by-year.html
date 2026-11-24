@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F3326">
+<title>Year by Year</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#FBF3DC; --surface:#FFFBEC; --line:#E2D5AA; --ink:#12382B; --muted:#56705F;
+  --year:#B5620A; --cap:#E9A12C; --cap-ink:#2B1A05; --chip:#EFE4BD; --warn:#A8321B;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme: dark;
+    --bg:#0F3326; --surface:#164330; --line:#2B6048; --ink:#FBF3DC; --muted:#A5C0A6;
+    --year:#F2A93B; --cap:#F2A93B; --cap-ink:#2B1A05; --chip:#1D5039; --warn:#FF9C85;
+  }
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Bricolage Grotesque",ui-rounded,"Segoe UI",system-ui,sans-serif;
+  font-size:1.0625rem; line-height:1.4;
+  padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0);
+  -webkit-tap-highlight-color:transparent;
+}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--year);outline-offset:3px;border-radius:6px}
+.app{min-height:100%;max-width:30rem;margin:0 auto;padding:0.75rem 1.25rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center}
+.top{width:100%;display:flex;justify-content:space-between;align-items:center}
+.name{font-weight:600;font-size:1rem;color:var(--muted)}
+.icon-btn{background:none;border:0;width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:50%}
+.icon-btn svg{width:1.6rem;height:1.6rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.year-row{display:flex;align-items:center;justify-content:center;gap:0.25rem;width:100%;margin-top:0.5rem}
+.year-wrap{position:relative;line-height:1}
+.year{font-weight:800;font-size:clamp(5.5rem,31vw,9.5rem);letter-spacing:-0.04em;color:var(--year);font-variant-numeric:tabular-nums;line-height:0.9}
+.year-wrap select{position:absolute;inset:0;width:100%;height:100%;opacity:0;font-size:1rem}
+.count{color:var(--muted);margin:0.25rem 0 1rem}
+
+.card{width:100%;min-height:6.75rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem;display:flex;flex-direction:column;justify-content:center;gap:0.15rem}
+button.card{border-style:dashed}
+.card .title{font-weight:800;font-size:1.5rem;line-height:1.15;text-wrap:balance}
+.card .artist{font-size:1.1rem}
+.card .genre{color:var(--muted);font-size:0.95rem}
+.card .hint{color:var(--muted);font-weight:600}
+
+.bar{width:100%;height:6px;border-radius:3px;background:var(--line);margin:1rem 0 0;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--year)}
+
+.ladder{display:flex;gap:0.4rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+.ladder button{background:var(--chip);border:1px solid transparent;border-radius:999px;padding:0.4rem 0.8rem;min-width:3rem;font-weight:600}
+.ladder button[aria-pressed="true"]{background:var(--year);color:var(--bg)}
+
+.transport{display:flex;align-items:center;justify-content:center;gap:1.25rem;margin-top:1.25rem}
+.cap{position:relative;width:8.25rem;height:8.25rem;border:0;background:none;padding:0}
+.cap svg.crimp{position:absolute;inset:0;width:100%;height:100%;fill:var(--cap)}
+.cap svg.glyph{position:absolute;inset:0;margin:auto;width:3rem;height:3rem;fill:var(--cap-ink)}
+.cap:active{transform:scale(0.97)}
+.cap[disabled]{opacity:0.6}
+.skip{width:3.5rem;height:3.5rem}
+.skip svg{width:2.1rem;height:2.1rem;fill:currentColor;stroke:none}
+.action{font-weight:600;margin:0.6rem 0 0;min-height:1.5em}
+.msg{color:var(--warn);min-height:1.4em;margin:0.4rem 0 0;font-size:0.95rem}
+.source{margin-top:auto;padding-top:1rem;color:var(--muted);font-size:0.9rem}
+
+dialog{border:0;padding:0;background:var(--bg);color:var(--ink);width:min(30rem,100%);max-width:100%;max-height:92dvh;margin:auto auto 0;border-radius:18px 18px 0 0;text-align:left}
+@media (min-width:40rem){dialog{margin:auto;border-radius:18px}}
+dialog::backdrop{background:rgba(5,20,14,0.6)}
+.sheet{padding:1.25rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom,0))}
+.sheet header{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem}
+.sheet h2{margin:0;font-size:1.5rem;font-weight:800}
+.sheet h3{margin:1.5rem 0 0.5rem;font-size:1.05rem;font-weight:800}
+.sheet p{margin:0.35rem 0;color:var(--muted);font-size:0.95rem}
+.row{display:flex;align-items:center;gap:0.75rem;padding:0.55rem 0;border-bottom:1px solid var(--line)}
+.row span{flex:1}
+.row small{display:block;color:var(--muted)}
+input[type=checkbox],input[type=radio]{width:1.3rem;height:1.3rem;accent-color:var(--year);flex:none}
+.genres details{border-bottom:1px solid var(--line);padding:0.35rem 0 0.35rem 0.75rem}
+.genres summary{color:var(--muted);font-size:0.95rem;padding:0.3rem 0;cursor:pointer}
+.genres details .row{font-size:0.95rem;padding:0.4rem 0}
+.genres details .row:last-child{border-bottom:0}
+.genres .g>.row{border-bottom:0}
+.text{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0.6rem 0.75rem}
+.btn{background:var(--year);color:var(--bg);border:0;border-radius:10px;padding:0.65rem 1rem;font-weight:800;margin-top:0.6rem}
+.btn.quiet{background:var(--chip);color:var(--ink)}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:0.85rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:0.15rem 0.35rem;word-break:break-all}
+ol{margin:0.4rem 0;padding-left:1.25rem;color:var(--muted);font-size:0.95rem}
+ol li{margin:0.3rem 0}
+</style>
+</head>
+<body>
+<main class="app">
+  <div class="top">
+    <span class="name">Year by Year</span>
+    <button class="icon-btn" id="openSettings" aria-label="Settings">
+      <svg viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h2M10 12h10M4 18h8M16 18h4"/><circle cx="16" cy="6" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>
+    </button>
+  </div>
+
+  <div class="year-row">
+    <button class="icon-btn skip" id="yearPrev" aria-label="Previous year"><svg viewBox="0 0 24 24"><path d="M15 5l-8 7 8 7z"/></svg></button>
+    <div class="year-wrap">
+      <div class="year" id="year" aria-hidden="true">1970</div>
+      <select id="yearSel" aria-label="Jump to year"></select>
+    </div>
+    <button class="icon-btn skip" id="yearNext" aria-label="Next year"><svg viewBox="0 0 24 24"><path d="M9 5l8 7-8 7z"/></svg></button>
+  </div>
+  <p class="count" id="count"></p>
+
+  <div id="cardSlot" style="width:100%"></div>
+
+  <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+  <div class="ladder" id="ladder" hidden></div>
+
+  <div class="transport">
+    <button class="icon-btn skip" id="prev" aria-label="Previous song"><svg viewBox="0 0 24 24"><path d="M6 5h2.5v14H6zM20 5v14l-10-7z"/></svg></button>
+    <button class="cap" id="play" aria-label="Play">
+      <svg class="crimp" viewBox="-110 -110 220 220" aria-hidden="true"><path id="crimp"/></svg>
+      <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path id="glyph" d="M7 4l14 8-14 8z"/></svg>
+    </button>
+    <button class="icon-btn skip" id="next" aria-label="Next song"><svg viewBox="0 0 24 24"><path d="M15.5 5H18v14h-2.5zM4 5v14l10-7z"/></svg></button>
+  </div>
+  <p class="action" id="action"></p>
+  <p class="msg" id="msg" role="status"></p>
+  <p class="source" id="source"></p>
+</main>
+
+<dialog id="settings" aria-labelledby="setTitle">
+  <div class="sheet">
+    <header><h2 id="setTitle">Settings</h2><button class="btn quiet" id="closeSettings" style="margin:0">Done</button></header>
+
+    <label class="row"><span>Guessing game<small>Play short clips that get longer: 1, 3, 5, 15, 30 seconds, then the full song</small></span><input type="checkbox" id="sGame"></label>
+    <label class="row"><span>Hide song names<small>Tap the card to reveal the answer</small></span><input type="checkbox" id="sHide"></label>
+    <label class="row"><span>Play the next song automatically<small>When the guessing game is off</small></span><input type="checkbox" id="sAuto"></label>
+    <label class="row"><span>Shuffle the years<small>Jump around the decades instead of going 1970 to 2025</small></span><input type="checkbox" id="sShuffleYears"></label>
+    <label class="row"><span>Shuffle songs within each year</span><input type="checkbox" id="sShuffle"></label>
+
+    <h3>Clips start from</h3>
+    <label class="row"><span>A key part of the song<small>Uses the 30-second store preview</small></span><input type="radio" name="from" value="key"></label>
+    <label class="row"><span>The beginning<small>Needs Spotify. Timing is less exact on 1-second clips</small></span><input type="radio" name="from" value="start"></label>
+
+    <h3>Full songs start</h3>
+    <p>Only with Spotify. Skipping ahead gets past slow intros.</p>
+    <label class="row"><span>At the beginning</span><input type="radio" name="skipIn" value="0"></label>
+    <label class="row"><span>30 seconds in</span><input type="radio" name="skipIn" value="30"></label>
+    <label class="row"><span>1 minute in</span><input type="radio" name="skipIn" value="60"></label>
+
+    <div id="genreBlock"><h3>Genres and songs</h3>
+    <p>Untick a genre to drop all of it, or open “Choose songs” to drop single songs.</p>
+    <div class="genres" id="genres"></div></div>
+    <p id="genreCount"></p>
+
+    <h3>Spotify, for full songs</h3>
+    <p id="spStatus"></p>
+    <div id="spSetup">
+      <ol>
+        <li>Create an app at developer.spotify.com/dashboard and tick “Web API”.</li>
+        <li>Add this redirect URI to the app: <code id="redirect"></code></li>
+        <li>Paste the app’s Client ID here and connect.</li>
+      </ol>
+      <input class="text" id="clientId" placeholder="Spotify Client ID" autocomplete="off" spellcheck="false">
+      <button class="btn" id="spConnect">Connect Spotify</button>
+    </div>
+    <div id="plBlock" hidden>
+      <h3>Play one of your playlists</h3>
+      <p id="plStatus"></p>
+      <button class="btn quiet" id="plFetch">Show my playlists</button>
+      <select class="text" id="plSel" hidden style="margin-top:0.6rem" aria-label="Your playlists"></select>
+      <button class="btn" id="plUse" hidden>Use this playlist</button>
+      <button class="btn quiet" id="plOff" hidden>Go back to the built-in songs</button>
+    </div>
+    <button class="btn quiet" id="spDisconnect" hidden>Disconnect Spotify</button>
+    <p>Keep the Spotify app open on this phone. Full songs play through it, so they follow the phone to your Bluetooth speaker.</p>
+  </div>
+</dialog>
+
+<script>
+"use strict";
+const G=["Pop","Rock","Metal","R&B/Soul","Hip-Hop","Dance/Electronic","Country/Folk","Latin","Reggae","World"];
+const BUILTIN=[[1970,"Bridge over Troubled Water","Simon & Garfunkel",0],[1970,"Let It Be","The Beatles",1],[1970,"Your Song","Elton John",0],[1970,"Paranoid","Black Sabbath",2],[1970,"War","Edwin Starr",3],[1970,"Big Yellow Taxi","Joni Mitchell",6],[1970,"Get Up (I Feel Like Being a) Sex Machine","James Brown",3],[1970,"ABC","The Jackson 5",3],[1970,"Ain't No Mountain High Enough","Diana Ross",3],[1970,"Feliz Navidad","José Feliciano",7],[1971,"Imagine","John Lennon",1],[1971,"Stairway to Heaven","Led Zeppelin",1],[1971,"What's Going On","Marvin Gaye",3],[1971,"Maggie May","Rod Stewart",1],[1971,"Ain't No Sunshine","Bill Withers",3],[1971,"Take Me Home, Country Roads","John Denver",6],[1971,"Brown Sugar","The Rolling Stones",1],[1971,"Baba O'Riley","The Who",1],[1971,"Theme from Shaft","Isaac Hayes",3],[1971,"Dum Maro Dum","Asha Bhosle",9],[1972,"Superstition","Stevie Wonder",3],[1972,"Rocket Man","Elton John",0],[1972,"Lean on Me","Bill Withers",3],[1972,"Heart of Gold","Neil Young",1],[1972,"Walk on the Wild Side","Lou Reed",1],[1972,"Smoke on the Water","Deep Purple",2],[1972,"Papa Was a Rollin' Stone","The Temptations",3],[1972,"I'll Take You There","The Staple Singers",3],[1972,"You're So Vain","Carly Simon",0],[1972,"Starman","David Bowie",1],[1973,"Dream On","Aerosmith",1],[1973,"Piano Man","Billy Joel",0],[1973,"Let's Get It On","Marvin Gaye",3],[1973,"Jolene","Dolly Parton",6],[1973,"Money","Pink Floyd",1],[1973,"Goodbye Yellow Brick Road","Elton John",0],[1973,"Midnight Train to Georgia","Gladys Knight & the Pips",3],[1973,"Knockin' on Heaven's Door","Bob Dylan",1],[1973,"Free Bird","Lynyrd Skynyrd",1],[1973,"The Joker","Steve Miller Band",1],[1974,"Sweet Home Alabama","Lynyrd Skynyrd",1],[1974,"Waterloo","ABBA",0],[1974,"No Woman, No Cry","Bob Marley & the Wailers",8],[1974,"Kung Fu Fighting","Carl Douglas",5],[1974,"I Will Always Love You","Dolly Parton",6],[1974,"Killer Queen","Queen",1],[1974,"Rock Your Baby","George McCrae",5],[1974,"You Ain't Seen Nothing Yet","Bachman–Turner Overdrive",1],[1974,"Cat's in the Cradle","Harry Chapin",6],[1974,"Can't Get Enough of Your Love, Babe","Barry White",3],[1975,"Bohemian Rhapsody","Queen",1],[1975,"Born to Run","Bruce Springsteen",1],[1975,"Wish You Were Here","Pink Floyd",1],[1975,"Landslide","Fleetwood Mac",1],[1975,"Mamma Mia","ABBA",0],[1975,"That's the Way (I Like It)","KC and the Sunshine Band",5],[1975,"Love to Love You Baby","Donna Summer",5],[1975,"Rhinestone Cowboy","Glen Campbell",6],[1975,"One of These Nights","Eagles",1],[1975,"Fight the Power","The Isley Brothers",3],[1976,"Dancing Queen","ABBA",0],[1976,"Hotel California","Eagles",1],[1976,"Go Your Own Way","Fleetwood Mac",1],[1976,"(Don't Fear) The Reaper","Blue Öyster Cult",1],[1976,"Somebody to Love","Queen",1],[1976,"Anarchy in the U.K.","Sex Pistols",1],[1976,"More Than a Feeling","Boston",1],[1976,"Carry On Wayward Son","Kansas",1],[1976,"Fernando","ABBA",0],[1976,"Young Hearts Run Free","Candi Staton",5],[1977,"Stayin' Alive","Bee Gees",5],[1977,"Dreams","Fleetwood Mac",1],[1977,"I Feel Love","Donna Summer",5],[1977,"We Will Rock You","Queen",1],[1977,"Heroes","David Bowie",1],[1977,"Three Little Birds","Bob Marley and the Wailers",8],[1977,"Mr. Blue Sky","Electric Light Orchestra",1],[1977,"Brick House","Commodores",3],[1977,"God Save the Queen","Sex Pistols",1],[1977,"Margaritaville","Jimmy Buffett",6],[1978,"September","Earth, Wind & Fire",3],[1978,"Le Freak","Chic",5],[1978,"I Will Survive","Gloria Gaynor",5],[1978,"Heart of Glass","Blondie",0],[1978,"Wuthering Heights","Kate Bush",0],[1978,"Y.M.C.A.","Village People",5],[1978,"Sultans of Swing","Dire Straits",1],[1978,"Roxanne","The Police",1],[1978,"Don't Stop Me Now","Queen",1],[1978,"Rasputin","Boney M.",5],[1979,"Another Brick in the Wall, Part 2","Pink Floyd",1],[1979,"Don't Stop 'Til You Get Enough","Michael Jackson",3],[1979,"Stay With Me","Miki Matsubara",0],[1979,"London Calling","The Clash",1],[1979,"Highway to Hell","AC/DC",2],[1979,"Video Killed the Radio Star","The Buggles",0],[1979,"Hot Stuff","Donna Summer",5],[1979,"Message in a Bottle","The Police",1],[1979,"Gimme! Gimme! Gimme! (A Man After Midnight)","ABBA",0],[1980,"Another One Bites the Dust","Queen",1],[1980,"Back in Black","AC/DC",2],[1980,"Upside Down","Diana Ross",5],[1980,"Celebration","Kool & the Gang",3],[1980,"Funkytown","Lipps Inc.",5],[1980,"Love Will Tear Us Apart","Joy Division",1],[1980,"Ace of Spades","Motörhead",2],[1980,"Crazy Train","Ozzy Osbourne",2],[1980,"Call Me","Blondie",1],[1980,"Could You Be Loved","Bob Marley and the Wailers",8],[1981,"Don't Stop Believin'","Journey",1],[1981,"Super Freak","Rick James",3],[1981,"In the Air Tonight","Phil Collins",0],[1981,"Never Too Much","Luther Vandross",3],[1981,"Under Pressure","Queen and David Bowie",1],[1981,"Bette Davis Eyes","Kim Carnes",0],[1981,"Give It to Me Baby","Rick James",3],[1981,"Let's Groove","Earth, Wind & Fire",3],[1981,"Ghost Town","The Specials",1],[1981,"Tom Sawyer","Rush",1],[1982,"Billie Jean","Michael Jackson",0],[1982,"Beat It","Michael Jackson",0],[1982,"Eye of the Tiger","Survivor",1],[1982,"Africa","Toto",1],[1982,"Should I Stay or Should I Go","The Clash",1],[1982,"Come On Eileen","Dexys Midnight Runners",0],[1982,"Sexual Healing","Marvin Gaye",3],[1982,"1999","Prince",0],[1983,"Sweet Dreams (Are Made of This)","Eurythmics",0],[1983,"Every Breath You Take","The Police",1],[1983,"Girls Just Want to Have Fun","Cyndi Lauper",0],[1983,"Blue Monday","New Order",5],[1983,"All Night Long (All Night)","Lionel Richie",3],[1983,"Karma Chameleon","Culture Club",0],[1983,"Let's Dance","David Bowie",0],[1983,"Total Eclipse of the Heart","Bonnie Tyler",0],[1983,"Jump","Van Halen",1],[1983,"99 Luftballons","Nena",0],[1984,"Purple Rain","Prince and the Revolution",0],[1984,"Last Christmas","Wham!",0],[1984,"Summer of '69","Bryan Adams",1],[1984,"Wake Me Up Before You Go-Go","Wham!",0],[1984,"Footloose","Kenny Loggins",0],[1984,"Born in the U.S.A.","Bruce Springsteen",1],[1984,"Smooth Operator","Sade",3],[1984,"Like a Virgin","Madonna",0],[1984,"What's Love Got to Do with It","Tina Turner",0],[1984,"When Doves Cry","Prince and the Revolution",0],[1985,"Take On Me","a-ha",0],[1985,"Running Up That Hill (A Deal with God)","Kate Bush",0],[1985,"Everybody Wants to Rule the World","Tears for Fears",0],[1985,"Money for Nothing","Dire Straits",1],[1985,"Don't You (Forget About Me)","Simple Minds",1],[1985,"West End Girls","Pet Shop Boys",0],[1985,"We Built This City","Starship",1],[1985,"Saving All My Love for You","Whitney Houston",3],[1985,"Conga","Miami Sound Machine",7],[1985,"Into the Groove","Madonna",0],[1986,"Livin' on a Prayer","Bon Jovi",1],[1986,"The Final Countdown","Europe",1],[1986,"Kiss","Prince and the Revolution",0],[1986,"Sledgehammer","Peter Gabriel",1],[1986,"True Colors","Cyndi Lauper",0],[1986,"La Isla Bonita","Madonna",0],[1986,"Nasty","Janet Jackson",3],[1986,"You Give Love a Bad Name","Bon Jovi",1],[1986,"Walk Like an Egyptian","The Bangles",0],[1987,"Never Gonna Give You Up","Rick Astley",0],[1987,"I Wanna Dance with Somebody (Who Loves Me)","Whitney Houston",0],[1987,"Sweet Child o' Mine","Guns N' Roses",1],[1987,"With or Without You","U2",1],[1987,"Bad Boys","Inner Circle",8],[1987,"La Bamba","Los Lobos",7],[1987,"Pour Some Sugar on Me","Def Leppard",1],[1987,"Bad","Michael Jackson",0],[1987,"(I've Had) The Time of My Life","Bill Medley and Jennifer Warnes",0],[1988,"Fast Car","Tracy Chapman",6],[1988,"Every Rose Has Its Thorn","Poison",1],[1988,"One","Metallica",2],[1988,"Give Me One Reason","Tracy Chapman",1],[1988,"Don't Worry, Be Happy","Bobby McFerrin",0],[1988,"Orinoco Flow","Enya",9],[1988,"One Moment in Time","Whitney Houston",0],[1989,"Like a Prayer","Madonna",0],[1989,"Love Shack","The B-52's",1],[1989,"Pump Up the Jam","Technotronic",5],[1989,"Free Fallin'","Tom Petty",1],[1989,"Personal Jesus","Depeche Mode",1],[1989,"Back to Life (However Do You Want Me)","Soul II Soul",3],[1989,"Ice Ice Baby","Vanilla Ice",4],[1989,"The Dance","Garth Brooks",6],[1989,"Lambada","Kaoma",7],[1990,"Vogue","Madonna",0],[1990,"U Can't Touch This","MC Hammer",4],[1990,"Hold On","Wilson Phillips",0],[1990,"Poison","Bell Biv DeVoe",3],[1990,"Thunderstruck","AC/DC",2],[1990,"Enjoy the Silence","Depeche Mode",1],[1990,"Gonna Make You Sweat (Everybody Dance Now)","C+C Music Factory",5],[1990,"Cherry Pie","Warrant",1],[1990,"Wind of Change","Scorpions",1],[1991,"Smells Like Teen Spirit","Nirvana",1],[1991,"Losing My Religion","R.E.M.",1],[1991,"Black or White","Michael Jackson",0],[1991,"Enter Sandman","Metallica",2],[1991,"November Rain","Guns N' Roses",1],[1991,"Under the Bridge","Red Hot Chili Peppers",1],[1991,"Remember the Time","Michael Jackson",3],[1991,"The Show Must Go On","Queen",1],[1991,"Motownphilly","Boyz II Men",3],[1992,"I Will Always Love You","Whitney Houston",0],[1992,"Creep","Radiohead",1],[1992,"End of the Road","Boyz II Men",3],[1992,"Baby Got Back","Sir Mix-a-Lot",4],[1992,"Everybody Hurts","R.E.M.",1],[1992,"Killing in the Name","Rage Against the Machine",2],[1992,"Weak","SWV",3],[1992,"Rhythm Is a Dancer","Snap!",5],[1993,"What Is Love","Haddaway",5],[1993,"Linger","The Cranberries",1],[1993,"Heart-Shaped Box","Nirvana",1],[1993,"Mr. Vain","Culture Beat",5],[1993,"Hero","Mariah Carey",0],[1993,"The Sign","Ace of Base",0],[1993,"Can We Talk","Tevin Campbell",3],[1994,"Basket Case","Green Day",1],[1994,"Black Hole Sun","Soundgarden",1],[1994,"Live Forever","Oasis",1],[1994,"Waterfalls","TLC",3],[1994,"Zombie","The Cranberries",1],[1994,"Cotton Eye Joe","Rednex",5],[1994,"Can You Feel the Love Tonight","Elton John",0],[1995,"Wonderwall","Oasis",1],[1995,"Fantasy","Mariah Carey",0],[1995,"Don't Speak","No Doubt",1],[1995,"You Oughta Know","Alanis Morissette",1],[1995,"You Are Not Alone","Michael Jackson",0],[1995,"Boombastic","Shaggy",8],[1995,"This Is How We Do It","Montell Jordan",3],[1996,"Wannabe","Spice Girls",0],[1996,"Killing Me Softly with His Song","Fugees",3],[1996,"No Diggity","Blackstreet feat. Dr. Dre",3],[1996,"Pony","Ginuwine",3],[1996,"Firestarter","The Prodigy",5],[1996,"Virtual Insanity","Jamiroquai",3],[1996,"Lovefool","The Cardigans",0],[1996,"I Believe I Can Fly","R. Kelly",3],[1996,"Return of the Mack","Mark Morrison",3],[1997,"Bitter Sweet Symphony","The Verve",1],[1997,"My Heart Will Go On","Celine Dion",0],[1997,"Barbie Girl","Aqua",0],[1997,"Torn","Natalie Imbruglia",0],[1997,"Everybody (Backstreet's Back)","Backstreet Boys",0],[1997,"Tubthumping","Chumbawamba",1],[1997,"Song 2","Blur",1],[1997,"Everlong","Foo Fighters",1],[1998,"...Baby One More Time","Britney Spears",0],[1998,"Iris","Goo Goo Dolls",1],[1998,"I Don't Want to Miss a Thing","Aerosmith",1],[1998,"Are You That Somebody?","Aaliyah",3],[1998,"Blue (Da Ba Dee)","Eiffel 65",5],[1998,"Music Sounds Better with You","Stardust",5],[1998,"Believe","Cher",0],[1999,"Smooth","Santana feat. Rob Thomas",1],[1999,"No Scrubs","TLC",3],[1999,"I Want It That Way","Backstreet Boys",0],[1999,"Livin' la Vida Loca","Ricky Martin",7],[1999,"All Star","Smash Mouth",1],[1999,"Scar Tissue","Red Hot Chili Peppers",1],[1999,"Canned Heat","Jamiroquai",3],[1999,"My Name Is","Eminem",4],[1999,"Say My Name","Destiny's Child",3],[2000,"In the End","Linkin Park",1],[2000,"Yellow","Coldplay",1],[2000,"Ms. Jackson","Outkast",4],[2000,"Bye Bye Bye","NSYNC",0],[2000,"Lady (Hear Me Tonight)","Modjo",5],[2000,"The Real Slim Shady","Eminem",4],[2000,"It Wasn't Me","Shaggy feat. Rikrok",8],[2000,"One More Time","Daft Punk",5],[2000,"Oops!... I Did It Again","Britney Spears",0],[2000,"Stan","Eminem feat. Dido",4],[2001,"Aerials","System of a Down",2],[2001,"Whenever, Wherever","Shakira",0],[2001,"Harder, Better, Faster, Stronger","Daft Punk",5],[2001,"Chop Suey!","System of a Down",2],[2001,"How You Remind Me","Nickelback",1],[2001,"Family Affair","Mary J. Blige",3],[2001,"Clint Eastwood","Gorillaz",4],[2001,"Drops of Jupiter (Tell Me)","Train",1],[2002,"Lose Yourself","Eminem",4],[2002,"Complicated","Avril Lavigne",0],[2002,"'Till I Collapse","Eminem",4],[2002,"The Scientist","Coldplay",1],[2002,"Without Me","Eminem",4],[2002,"A Thousand Miles","Vanessa Carlton",0],[2002,"Foolish","Ashanti",3],[2002,"Dilemma","Nelly feat. Kelly Rowland",3],[2002,"Rock Your Body","Justin Timberlake",0],[2003,"Crazy in Love","Beyoncé feat. Jay-Z",3],[2003,"Hey Ya!","Outkast",0],[2003,"In da Club","50 Cent",4],[2003,"Toxic","Britney Spears",0],[2003,"Numb","Linkin Park",1],[2003,"Bring Me to Life","Evanescence",1],[2003,"21 Questions","50 Cent",4],[2003,"Mr. Brightside","The Killers",1],[2004,"Yeah!","Usher feat. Lil Jon & Ludacris",3],[2004,"American Idiot","Green Day",1],[2004,"Let Me Love You","Mario",3],[2004,"My Boo","Usher & Alicia Keys",3],[2004,"Duality","Slipknot",2],[2004,"Somebody Told Me","The Killers",1],[2004,"If I Ain't Got You","Alicia Keys",3],[2005,"Hung Up","Madonna",0],[2005,"Feel Good Inc.","Gorillaz",1],[2005,"1 Thing","Amerie",3],[2005,"Love","Keyshia Cole",3],[2005,"Pump It","The Black Eyed Peas",4],[2005,"Sugar, We're Goin Down","Fall Out Boy",1],[2005,"Temperature","Sean Paul",8],[2005,"Bad Day","Daniel Powter",0],[2006,"Hips Don't Lie","Shakira feat. Wyclef Jean",0],[2006,"Crazy","Gnarls Barkley",3],[2006,"Rehab","Amy Winehouse",3],[2006,"SexyBack","Justin Timberlake",0],[2006,"Welcome to the Black Parade","My Chemical Romance",1],[2006,"You","Lloyd feat. Lil Wayne",3],[2006,"Promiscuous","Nelly Furtado feat. Timbaland",0],[2006,"Irreplaceable","Beyoncé",3],[2006,"Life Is a Highway","Rascal Flatts",6],[2006,"Smack That","Akon feat. Eminem",3],[2007,"Umbrella","Rihanna feat. Jay-Z",0],[2007,"Stronger","Kanye West",4],[2007,"Apologize","Timbaland feat. OneRepublic",0],[2007,"Beautiful Girls","Sean Kingston",0],[2007,"What I've Done","Linkin Park",1],[2008,"Psychosocial","Slipknot",2],[2008,"Poker Face","Lady Gaga",0],[2008,"Viva la Vida","Coldplay",1],[2008,"Heartless","Kanye West",4],[2008,"Hot N Cold","Katy Perry",0],[2008,"Closer","Ne-Yo",3],[2008,"Disturbia","Rihanna",0],[2009,"Bad Romance","Lady Gaga",0],[2009,"Party in the U.S.A.","Miley Cyrus",0],[2009,"Fireflies","Owl City",0],[2009,"I Gotta Feeling","The Black Eyed Peas",0],[2009,"Tik Tok","Kesha",0],[2009,"21 Guns","Green Day",1],[2009,"Need You Now","Lady A",6],[2010,"Rolling in the Deep","Adele",0],[2010,"Love the Way You Lie","Eminem featuring Rihanna",4],[2010,"Just the Way You Are","Bruno Mars",0],[2010,"Baby","Justin Bieber feat. Ludacris",0],[2010,"Only Girl (In the World)","Rihanna",0],[2010,"Firework","Katy Perry",0],[2010,"Airplanes","B.o.B feat. Hayley Williams",4],[2010,"Pumped Up Kicks","Foster the People",1],[2011,"Someone Like You","Adele",0],[2011,"Party Rock Anthem","LMFAO featuring Lauren Bennett and GoonRock",5],[2011,"Midnight City","M83",5],[2011,"Moves like Jagger","Maroon 5 featuring Christina Aguilera",0],[2011,"On the Floor","Jennifer Lopez feat. Pitbull",0],[2011,"What Makes You Beautiful","One Direction",0],[2011,"A Thousand Years","Christina Perri",0],[2011,"Somebody That I Used to Know","Gotye featuring Kimbra",0],[2012,"Diamonds","Rihanna",0],[2012,"Locked Out of Heaven","Bruno Mars",0],[2012,"Pyramids","Frank Ocean",3],[2012,"Gangnam Style","PSY",0],[2012,"Skyfall","Adele",0],[2012,"Thinkin Bout You","Frank Ocean",3],[2012,"Bangarang","Skrillex feat. Sirah",5],[2012,"Clarity","Zedd featuring Foxes",5],[2013,"Happy","Pharrell Williams",0],[2013,"Get Lucky","Daft Punk featuring Pharrell Williams and Nile Rodgers",5],[2013,"Mirrors","Justin Timberlake",0],[2013,"Wake Me Up","Avicii",5],[2013,"Counting Stars","OneRepublic",0],[2013,"Dark Horse","Katy Perry featuring Juicy J",0],[2013,"Do I Wanna Know?","Arctic Monkeys",1],[2013,"Rap God","Eminem",4],[2014,"Uptown Funk","Mark Ronson featuring Bruno Mars",0],[2014,"Shake It Off","Taylor Swift",0],[2014,"Often","The Weeknd",3],[2014,"Chandelier","Sia",0],[2014,"Sugar","Maroon 5",0],[2014,"Rather Be","Clean Bandit featuring Jess Glynne",5],[2015,"Lean On","Major Lazer & DJ Snake featuring MØ",5],[2015,"Can't Feel My Face","The Weeknd",0],[2015,"See You Again","Wiz Khalifa featuring Charlie Puth",4],[2015,"Stressed Out","Twenty One Pilots",1],[2015,"The Less I Know the Better","Tame Impala",1],[2015,"The Hills","The Weeknd",3],[2016,"Closer","The Chainsmokers featuring Halsey",0],[2016,"Redbone","Childish Gambino",3],[2016,"Nights","Frank Ocean",3],[2016,"I Feel It Coming","The Weeknd feat. Daft Punk",0],[2017,"Despacito","Luis Fonsi featuring Daddy Yankee",7],[2017,"That's What I Like","Bruno Mars",3],[2017,"Shape of You","Ed Sheeran",0],[2018,"Little Dark Age","MGMT",1],[2018,"Sunflower","Post Malone & Swae Lee",0],[2018,"High Hopes","Panic! at the Disco",1],[2018,"Slow Dancing in the Dark","Joji",3],[2019,"Bad Guy","Billie Eilish",0],[2019,"Blinding Lights","The Weeknd",0],[2019,"EARFQUAKE","Tyler, the Creator",3],[2019,"Circles","Post Malone",0],[2019,"Without Me","Halsey",0],[2020,"Heat Waves","Glass Animals",0],[2020,"Dynamite","BTS",0],[2020,"Levitating","Dua Lipa",0],[2020,"Save Your Tears","The Weeknd",0],[2020,"Dákiti","Bad Bunny & Jhay Cortez",7],[2020,"Positions","Ariana Grande",0],[2021,"Leave the Door Open","Silk Sonic",3],[2021,"Happier Than Ever","Billie Eilish",0],[2021,"Kiss Me More","Doja Cat featuring SZA",0],[2021,"Drivers License","Olivia Rodrigo",0],[2021,"Good 4 U","Olivia Rodrigo",0],[2021,"Enemy","Imagine Dragons & JID",1],[2022,"As It Was","Harry Styles",0],[2022,"Is There Someone Else?","The Weeknd",3],[2022,"Bad Habit","Steve Lacy",3],[2022,"Tití Me Preguntó","Bad Bunny",7],[2022,"Here With Me","d4vd",0],[2022,"Kill Bill","SZA",3],[2023,"Ella Baila Sola","Eslabon Armado & Peso Pluma",7],[2023,"Vampire","Olivia Rodrigo",0],[2023,"Flowers","Miley Cyrus",0],[2023,"Boy's a Liar Pt. 2","PinkPantheress & Ice Spice",0],[2023,"Popular","The Weeknd feat. Madonna & Playboi Carti",0],[2024,"Espresso","Sabrina Carpenter",0],[2024,"Good Luck, Babe!","Chappell Roan",0],[2024,"Birds of a Feather","Billie Eilish",0],[2024,"Die with a Smile","Lady Gaga & Bruno Mars",0],[2025,"Cry for Me","The Weeknd",3],[2025,"Ordinary","Alex Warren",0],[2025,"DtMF","Bad Bunny",7],[2025,"Golden","HUNTR/X, EJAE, Audrey Nuna & REI AMI",0],[2025,"Baile Inolvidable","Bad Bunny",7],[2025,"Girl Like Me","PinkPantheress",5],[2025,"Folded","Kehlani",3]];        // [year, title, artist, genre index]
+let SONGS=BUILTIN;                 // playlist songs add [.., -1, spotify uri, length in ms]
+const LADDER=[1,3,5,15,30,0];      // seconds; 0 = full song
+const $=id=>document.getElementById(id);
+
+/* ---------- saved state ---------- */
+const store={
+  get(k,d){try{const v=localStorage.getItem("yby3."+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem("yby3."+k,JSON.stringify(v))}catch(e){}},
+  del(k){try{localStorage.removeItem("yby3."+k)}catch(e){}}
+};
+const cfg=Object.assign({game:false,hide:true,auto:true,shuffle:false,shuffleYears:false,skip:{},source:"built",skipIn:30,from:"key",genres:G.map(()=>true),cur:0,clientId:"",seed:Math.floor(Math.random()*1e9)},store.get("cfg",{}));
+if(!Array.isArray(cfg.genres)||cfg.genres.length!==G.length)cfg.genres=G.map(()=>true);
+if(!cfg.skip||typeof cfg.skip!=="object")cfg.skip={};
+const save=()=>store.set("cfg",cfg);
+let pvCache=store.get("pv",{}), spCache=store.get("sp",{}), tok=store.get("tok",null), pl=store.get("pl",null);
+if(cfg.source==="pl"&&pl&&pl.songs&&pl.songs.length)SONGS=pl.songs;else cfg.source="built";
+
+/* ---------- playlist ---------- */
+let order=[],pos=0,step=0,revealed=false;
+function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function shuffled(a,r){for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+const inPlay=i=>SONGS!==BUILTIN||(cfg.genres[SONGS[i][3]]&&!cfg.skip[i]);
+function build(){
+  const keepYear=SONGS[cfg.cur]?SONGS[cfg.cur][0]:1970;
+  let list=SONGS.map((s,i)=>i).filter(inPlay);
+  if(!list.length){cfg.skip={};cfg.genres=G.map(()=>true);list=SONGS.map((s,i)=>i)}
+  const byYear={};list.forEach(i=>(byYear[SONGS[i][0]]=byYear[SONGS[i][0]]||[]).push(i));
+  const sorted=Object.keys(byYear).map(Number).sort((a,b)=>a-b);
+  const years=cfg.shuffleYears?shuffled(sorted.slice(),rng(cfg.seed)):sorted;
+  order=[];
+  years.forEach(y=>order.push(...(cfg.shuffle?shuffled(byYear[y],rng(cfg.seed+y)):byYear[y])));
+  pos=order.indexOf(cfg.cur);
+  if(pos<0){
+    pos=order.findIndex(i=>SONGS[i][0]===keepYear);
+    if(pos<0&&!cfg.shuffleYears)pos=order.findIndex(i=>SONGS[i][0]>keepYear);
+    if(pos<0)pos=0;
+  }
+  cfg.cur=order[pos];
+  $("yearSel").innerHTML=sorted.map(y=>`<option>${y}</option>`).join("");
+}
+const cur=()=>SONGS[order[pos]];
+
+/* ---------- matching helpers ---------- */
+const keyOf=s=>norm(s[1])+"|"+norm(s[2]);
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+const cleanTitle=t=>(t.replace(/\([^)]*\)/g," ").replace(/^[.\s]+/,"").replace(/\s+/g," ").trim())||t;
+const fullArtist=a=>a.split(/\s+(?:feat\.?|featuring)\s+/i)[0];
+const firstArtist=a=>a.split(/,|&|\s+(?:and|feat\.?|featuring|with)\s+/i)[0].trim();
+function pick(cands,song){
+  const t=norm(cleanTitle(song[1])),a=norm(firstArtist(song[2]));let best=null,top=0;
+  for(const c of cands){
+    const n=norm(c.name),ar=norm(c.artist);let sc=0;
+    if(a&&ar.includes(a))sc+=2;
+    if(n.startsWith(t))sc+=2;else if(n.includes(t))sc+=1;
+    if(/karaoke|tribute|made famous|cover version|instrumental|\blive\b|re-?recorded/i.test(c.name+" "+c.artist)&&!/live/i.test(song[1]))sc-=2;
+    if(sc>top){top=sc;best=c}
+  }
+  return top>=3?best.val:null;
+}
+
+/* ---------- 30-second preview clips (Apple, then Deezer) ---------- */
+function jsonp(url){
+  return new Promise((res,rej)=>{
+    const cb="ybyCb"+Math.random().toString(36).slice(2),s=document.createElement("script");
+    const done=()=>{clearTimeout(t);try{delete window[cb]}catch(e){}s.remove()};
+    const t=setTimeout(()=>{done();rej(new Error("timeout"))},9000);
+    window[cb]=d=>{done();res(d)};
+    s.onerror=()=>{done();rej(new Error("network"))};
+    s.src=url+"&callback="+cb;document.head.appendChild(s);
+  });
+}
+const pvPending={};
+function findPreview(song){
+  const key=keyOf(song);
+  if(pvCache[key])return Promise.resolve(pvCache[key]);
+  if(pvPending[key])return pvPending[key];
+  const term=encodeURIComponent(cleanTitle(song[1])+" "+fullArtist(song[2]));
+  const p=(async()=>{
+    let url=null;
+    try{
+      const d=await jsonp("https://itunes.apple.com/search?media=music&entity=song&limit=10&term="+term);
+      url=pick((d.results||[]).filter(r=>r.previewUrl).map(r=>({name:r.trackName||"",artist:r.artistName||"",val:r.previewUrl})),song);
+    }catch(e){}
+    if(!url){
+      try{
+        const d=await jsonp("https://api.deezer.com/search?output=jsonp&limit=10&q="+term);
+        url=pick((d.data||[]).filter(r=>r.preview).map(r=>({name:r.title||"",artist:(r.artist&&r.artist.name)||"",val:r.preview})),song);
+      }catch(e){}
+    }
+    delete pvPending[key];
+    if(!url)throw new Error("No clip found for this song. Skip to the next one.");
+    pvCache[key]=url;store.set("pv",pvCache);return url;
+  })();
+  pvPending[key]=p;return p;
+}
+
+/* ---------- Spotify ---------- */
+const REDIRECT=location.origin+location.pathname;
+const spReady=()=>!!(tok&&tok.a&&cfg.clientId);
+async function spGrant(params){
+  const r=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(Object.assign({client_id:cfg.clientId},params))});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(j.error_description||"Spotify sign-in failed. Connect again in settings.");
+  tok={a:j.access_token,r:j.refresh_token||(tok&&tok.r),e:Date.now()+j.expires_in*1000};store.set("tok",tok);
+}
+async function spLogin(){
+  const bytes=crypto.getRandomValues(new Uint8Array(48));
+  const b64=b=>btoa(String.fromCharCode(...b)).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  const verifier=b64(bytes);
+  const hash=new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(verifier)));
+  store.set("verifier",verifier);
+  location.href="https://accounts.spotify.com/authorize?"+new URLSearchParams({client_id:cfg.clientId,response_type:"code",redirect_uri:REDIRECT,code_challenge_method:"S256",code_challenge:b64(hash),scope:"user-modify-playback-state user-read-playback-state playlist-read-private playlist-read-collaborative"});
+}
+function spLogout(){tok=null;store.del("tok")}
+async function sp(method,path,body){
+  if(!tok)throw new Error("Connect Spotify in settings first.");
+  if(tok.e-60000<Date.now()){
+    if(!tok.r){spLogout();throw new Error("Spotify sign-in expired. Connect again in settings.")}
+    try{await spGrant({grant_type:"refresh_token",refresh_token:tok.r})}catch(e){spLogout();throw e}
+  }
+  const r=await fetch("https://api.spotify.com/v1"+path,{method,headers:Object.assign({Authorization:"Bearer "+tok.a},body?{"Content-Type":"application/json"}:{}),body:body?JSON.stringify(body):undefined});
+  const txt=await r.text();let j=null;try{j=JSON.parse(txt)}catch(e){}
+  if(!r.ok){
+    if(r.status===401)spLogout();
+    const e=new Error(r.status===401?"Spotify sign-in expired. Connect again in settings.":"Spotify: "+((j&&j.error&&j.error.message)||("error "+r.status)));
+    e.status=r.status;throw e;
+  }
+  return j;
+}
+async function spFind(song){
+  if(song[4])return {uri:song[4],dur:song[5]||0};
+  const key=keyOf(song);
+  if(spCache[key])return spCache[key];
+  const t=cleanTitle(song[1]),a=fullArtist(song[2]);
+  for(const q of [`track:${t} artist:${firstArtist(song[2])}`,`${t} ${a}`]){
+    const j=await sp("GET","/search?type=track&limit=5&q="+encodeURIComponent(q));
+    const items=(j&&j.tracks&&j.tracks.items)||[];
+    const hit=pick(items.map(x=>({name:x.name||"",artist:(x.artists||[]).map(y=>y.name).join(" "),val:{uri:x.uri,dur:x.duration_ms}})),song);
+    if(hit){spCache[key]=hit;store.set("sp",spCache);return hit}
+  }
+  throw new Error("Spotify has no match for this song. Skip to the next one.");
+}
+const spPath=u=>u?u.replace("https://api.spotify.com/v1",""):null;
+async function plList(){
+  const out=[];let path="/me/playlists?limit=50";
+  while(path&&out.length<500){const j=await sp("GET",path);((j&&j.items)||[]).forEach(p=>{if(p&&p.id)out.push({id:p.id,name:p.name||"Untitled"})});path=spPath(j&&j.next)}
+  return out;
+}
+async function plLoad(id,name){
+  const songs=[];let path="/playlists/"+encodeURIComponent(id)+"/items?limit=50";
+  while(path){
+    const j=await sp("GET",path);
+    ((j&&j.items)||[]).forEach(r=>{
+      const t=r&&(r.item||r.track);
+      if(!t||!t.uri||t.is_local||(t.type&&t.type!=="track"))return;
+      const y=Number(((t.album&&t.album.release_date)||"").slice(0,4))||0;
+      songs.push([y,t.name||"",(t.artists||[]).map(a=>a.name).join(", "),-1,t.uri,t.duration_ms||0]);
+    });
+    path=spPath(j&&j.next);
+  }
+  if(!songs.length)throw new Error("No songs came back. Spotify only shares playlists you created or collaborate on.");
+  pl={id,name,songs};store.set("pl",pl);
+}
+function useSource(src){
+  stopAll();cfg.source=src;SONGS=src==="pl"&&pl?pl.songs:BUILTIN;if(SONGS===BUILTIN)cfg.source="built";
+  cfg.cur=0;step=0;revealed=false;build();pos=0;cfg.cur=order[0];save();renderSettings();render();prefetch();
+}
+async function spStart(uri,at){
+  const body={uris:[uri],position_ms:at||0};
+  try{await sp("PUT","/me/player/play",body)}
+  catch(e){
+    if(e.status!==404)throw e;
+    const d=await sp("GET","/me/player/devices");
+    const dev=d&&d.devices&&d.devices.find(x=>!x.is_restricted);
+    if(!dev)throw new Error("Open the Spotify app on this phone, play any song for a moment, then try again.");
+    await sp("PUT","/me/player/play?device_id="+encodeURIComponent(dev.id),body);
+  }
+}
+
+/* ---------- playback ---------- */
+const SILENT="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQAAAAA=";
+const audio=new Audio();audio.preload="auto";
+let tk=0,busy=false,timers=[],pollT=null,wake=null;
+let now={engine:null,playing:false,paused:false,limit:0};
+function clearTimers(){timers.forEach(clearTimeout);timers=[];clearInterval(pollT);pollT=null}
+function say(t){$("msg").textContent=t||""}
+function stopAll(){
+  tk++;clearTimers();audio.pause();
+  if(now.engine==="sp"&&now.playing)sp("PUT","/me/player/pause").catch(()=>{});
+  now={engine:null,playing:false,paused:false,limit:0};busy=false;
+}
+async function start(limit){
+  const song=cur(),useSp=spReady()&&(limit===0||cfg.from==="start"),wasSp=now.engine==="sp"&&now.playing;
+  const my=++tk;clearTimers();audio.pause();
+  if(wasSp&&!useSp)sp("PUT","/me/player/pause").catch(()=>{});
+  now={engine:useSp?"sp":"pv",playing:false,paused:false,limit:limit,prog:0,progAt:0,dur:0,uri:null};
+  busy=true;say("");render();
+  try{
+    if(useSp){
+      const tr=await spFind(song);if(my!==tk)return;
+      const at=!limit&&cfg.skipIn&&(!tr.dur||tr.dur>cfg.skipIn*1000+45000)?cfg.skipIn*1000:0;
+      await spStart(tr.uri,at);if(my!==tk)return;
+      Object.assign(now,{playing:true,uri:tr.uri,dur:tr.dur,prog:at,progAt:performance.now()});
+      if(limit)timers.push(setTimeout(()=>{if(my!==tk)return;sp("PUT","/me/player/pause").catch(()=>{});ended(true)},limit*1000+200));
+      else poll();
+    }else{
+      const url=await findPreview(song);if(my!==tk)return;
+      audio.src=url;
+      try{await audio.play()}catch(e){if(my!==tk)return;throw new Error(e&&e.name==="NotAllowedError"?"Tap play again to start the sound.":"This clip would not play. Skip to the next one.")}
+      if(my!==tk){audio.pause();return}
+      now.playing=true;
+    }
+    lockScreen();
+  }catch(e){if(my!==tk)return;now.playing=false;say(e.message)}
+  busy=false;render();loop();
+}
+function poll(){
+  const my=tk;let seen=false,closing=false;
+  pollT=setInterval(async()=>{
+    if(my!==tk||!now.playing||closing)return;
+    let j;try{j=await sp("GET","/me/player")}catch(e){return}
+    if(my!==tk||!now.playing||closing||!j||!j.item)return;
+    if(j.item.uri!==now.uri){if(seen){closing=true;sp("PUT","/me/player/pause").catch(()=>{});ended(false)}return}
+    now.prog=j.progress_ms;now.progAt=performance.now();
+    if(j.is_playing&&j.progress_ms>1500)seen=true;
+    if(!seen)return;
+    if(!j.is_playing&&j.progress_ms<1500){closing=true;ended(false)}
+    else if(!j.is_playing){now.playing=false;now.paused=true;clearTimers();render()}
+    else if(now.dur-j.progress_ms<2600){closing=true;timers.push(setTimeout(()=>{if(my===tk)ended(false)},Math.max(0,now.dur-j.progress_ms-300)))}
+  },2000);
+}
+function ended(wasClip){
+  clearTimers();now.playing=false;now.paused=false;
+  if(wasClip){if(cfg.game)step=Math.min(step+1,LADDER.length-1);render();return}
+  render();
+  if(cfg.auto&&!cfg.game)go(1,true);
+}
+audio.addEventListener("ended",()=>{if(now.engine==="pv"&&now.playing)ended(now.limit>0)});
+audio.addEventListener("error",()=>{
+  if(now.engine!=="pv"||audio.src===SILENT||!audio.src)return;
+  delete pvCache[keyOf(cur())];store.set("pv",pvCache);
+  if(now.playing||busy){tk++;busy=false;now.playing=false;say("This clip would not play. Tap play to try again.");render()}
+});
+function loop(){
+  if(!now.playing){return}
+  let f=0;
+  if(now.engine==="pv"){
+    if(now.limit&&audio.currentTime>=now.limit){audio.pause();ended(true);$("bar").style.width="100%";return}
+    f=audio.currentTime/(now.limit||audio.duration||30);
+  }else{
+    const p=now.prog+(performance.now()-now.progAt);
+    f=p/(now.limit?now.limit*1000:(now.dur||1));
+  }
+  $("bar").style.width=Math.max(0,Math.min(1,f))*100+"%";
+  requestAnimationFrame(loop);
+}
+function toggle(){
+  if(busy)return;
+  if(now.playing){
+    if(now.limit){stopAll();render();return}              // stopping a clip
+    if(now.engine==="pv")audio.pause();else{clearTimers();now.prog+=performance.now()-now.progAt;sp("PUT","/me/player/pause").catch(()=>{})}
+    now.playing=false;now.paused=true;render();return;
+  }
+  if(now.paused){
+    if(now.engine==="pv"){audio.play().then(()=>{now.playing=true;now.paused=false;render();loop()}).catch(()=>start(0));return}
+    const my=tk;busy=true;render();
+    sp("PUT","/me/player/play").then(()=>{if(my!==tk)return;busy=false;now.playing=true;now.paused=false;now.progAt=performance.now();poll();render();loop()})
+      .catch(e=>{if(my!==tk)return;busy=false;say(e.message);now.paused=false;render()});
+    return;
+  }
+  start(cfg.game?LADDER[step]:0);
+}
+function go(delta,autoplay){
+  const n=pos+delta;
+  if(n<0||n>=order.length){stopAll();say(n<0?"This is the first song.":"That was the last song.");render();return}
+  jump(n,autoplay);
+}
+function jump(n,autoplay){
+  stopAll();pos=n;cfg.cur=order[pos];step=0;revealed=false;save();say("");$("bar").style.width="0";
+  render();prefetch();
+  if(autoplay&&!cfg.game)start(0);
+}
+function jumpYear(y,autoplay){const n=order.findIndex(i=>SONGS[i][0]===y);if(n>=0)jump(n,autoplay)}
+function stepYear(d){
+  const years=[...new Set(order.map(i=>SONGS[i][0]))],k=years.indexOf(cur()[0])+d;
+  if(k>=0&&k<years.length)jumpYear(years[k],true);
+}
+function prefetch(){
+  if(spReady()&&!cfg.game)return;
+  [pos,pos+1].forEach(p=>{if(order[p]!=null)findPreview(SONGS[order[p]]).catch(()=>{})});
+}
+async function lockScreen(){try{if(navigator.wakeLock&&(!wake||wake.released))wake=await navigator.wakeLock.request("screen")}catch(e){}}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&now.playing)lockScreen()});
+let unlocked=false;
+document.addEventListener("pointerdown",()=>{
+  if(unlocked)return;unlocked=true;
+  if(!audio.src){audio.src=SILENT;audio.play().then(()=>{if(audio.src===SILENT)audio.pause()}).catch(()=>{})}
+},{capture:true});
+
+/* ---------- screen ---------- */
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const clipName=s=>s===0?"full song":s===1?"1 second":s+" seconds";
+function render(){
+  const s=cur(),y=s[0],inYear=order.filter(i=>SONGS[i][0]===y),show=revealed||!cfg.hide;
+  $("year").textContent=y||"????";$("yearSel").value=y;
+  $("count").textContent=`Song ${inYear.indexOf(order[pos])+1} of ${inYear.length}`;
+  $("cardSlot").innerHTML=show
+    ?`<div class="card"><div class="title">${esc(s[1])}</div><div class="artist">${esc(s[2])}</div>${s[3]>=0?`<div class="genre">${esc(G[s[3]])}</div>`:""}</div>`
+    :`<button class="card" id="reveal"><span class="hint">Tap to reveal the song</span></button>`;
+  const lad=$("ladder");lad.hidden=!cfg.game;
+  if(cfg.game)lad.innerHTML=LADDER.map((n,i)=>`<button data-step="${i}" aria-pressed="${i===step}">${n===0?"Full":n+"s"}</button>`).join("");
+  const playing=now.playing;
+  $("glyph").setAttribute("d",busy?"M5 10h3v4H5zM10.5 10h3v4h-3zM16 10h3v4h-3z":playing?(now.limit?"M6 6h12v12H6z":"M6 4h4.5v16H6zM13.5 4H18v16h-4.5z"):"M7 4l14 8-14 8z");
+  $("play").disabled=busy;
+  $("play").setAttribute("aria-label",playing?(now.limit?"Stop":"Pause"):"Play");
+  $("action").textContent=busy?"Loading…":playing?(now.limit?"Playing "+clipName(now.limit):"Playing"):now.paused?"Paused":cfg.game?"Play "+clipName(LADDER[step]):"Play";
+  $("source").textContent=spReady()?(SONGS===BUILTIN?"Full songs play through Spotify.":"Playing your playlist “"+pl.name+"” through Spotify."):"Playing 30-second clips. Connect Spotify in settings for full songs.";
+  if("mediaSession" in navigator){
+    try{navigator.mediaSession.metadata=new MediaMetadata({title:show?s[1]:"Guess the song",artist:show?s[2]:String(y),album:"Year by Year"})}catch(e){}
+  }
+}
+function renderSettings(){
+  $("sGame").checked=cfg.game;$("sHide").checked=cfg.hide;$("sAuto").checked=cfg.auto;$("sShuffle").checked=cfg.shuffle;$("sShuffleYears").checked=cfg.shuffleYears;
+  document.querySelectorAll("input[name=skipIn]").forEach(r=>{r.checked=Number(r.value)===Number(cfg.skipIn)});
+  document.querySelectorAll("input[name=from]").forEach(r=>{r.checked=r.value===cfg.from;if(r.value==="start")r.disabled=!spReady()});
+  $("genres").innerHTML=G.map((g,i)=>{
+    const songs=BUILTIN.map((s,k)=>k).filter(k=>BUILTIN[k][3]===i);
+    return `<div class="g"><label class="row"><span>${esc(g)}<small id="gc${i}"></small></span><input type="checkbox" data-g="${i}" ${cfg.genres[i]?"checked":""}></label>
+<details><summary>Choose songs</summary>${songs.map(k=>`<label class="row"><span>${esc(BUILTIN[k][1])}<small>${esc(BUILTIN[k][2])}, ${BUILTIN[k][0]}</small></span><input type="checkbox" data-s="${k}" ${cfg.skip[k]?"":"checked"}></label>`).join("")}</details></div>`}).join("");
+  counts();
+  $("redirect").textContent=REDIRECT;$("clientId").value=cfg.clientId;
+  const on=spReady(),file=location.protocol==="file:";
+  $("spSetup").hidden=on;$("spDisconnect").hidden=!on;
+  const usingPl=SONGS!==BUILTIN;
+  $("genreBlock").hidden=usingPl;$("plBlock").hidden=!on&&!usingPl;$("plOff").hidden=!usingPl;$("plFetch").hidden=!on;
+  $("plStatus").textContent=usingPl?`Playing “${pl.name}”, ${pl.songs.length} songs. Years come from each song’s release date on Spotify, so remasters and compilations can show a later year.`:"The game can run on a playlist you created instead of the built-in songs.";
+  $("spStatus").textContent=on?"Connected.":file?"Not connected. Spotify sign-in only works once this page is hosted on a web address; clips work without it.":"Not connected. This is a one-time setup and needs Spotify Premium.";
+}
+function counts(){
+  $("genreCount").textContent=`${order.length} of ${SONGS.length} songs in play.`;
+  if(SONGS!==BUILTIN)return;
+  G.forEach((g,i)=>{
+    let n=0,off=0;BUILTIN.forEach((s,k)=>{if(s[3]===i){n++;if(cfg.skip[k])off++}});
+    $("gc"+i).textContent=`${n} songs`+(off?`, ${off} dropped`:"");
+  });
+}
+function refilter(){
+  const before=cfg.cur;build();
+  if(cfg.cur!==before){stopAll();step=0;revealed=false}
+  counts();
+}
+function crimp(){
+  let d="";const teeth=21,N=420;
+  for(let i=0;i<=N;i++){const a=i/N*Math.PI*2,r=100+5*Math.cos(a*teeth);d+=(i?"L":"M")+(r*Math.cos(a)).toFixed(1)+" "+(r*Math.sin(a)).toFixed(1)}
+  $("crimp").setAttribute("d",d+"Z");
+}
+
+/* ---------- wiring ---------- */
+$("play").onclick=toggle;
+$("next").onclick=()=>go(1,true);
+$("prev").onclick=()=>go(-1,true);
+$("yearNext").onclick=()=>stepYear(1);
+$("yearPrev").onclick=()=>stepYear(-1);
+$("yearSel").onchange=e=>jumpYear(Number(e.target.value),false);
+$("cardSlot").onclick=e=>{if(e.target.closest("#reveal")){revealed=true;render()}};
+$("ladder").onclick=e=>{const b=e.target.closest("button");if(!b||busy)return;step=Number(b.dataset.step);start(LADDER[step])};
+$("openSettings").onclick=()=>{renderSettings();$("settings").showModal()};
+$("closeSettings").onclick=()=>$("settings").close();
+$("settings").addEventListener("click",e=>{if(e.target===$("settings"))$("settings").close()});
+$("settings").addEventListener("change",e=>{
+  const t=e.target;
+  if(t.id==="sGame"){cfg.game=t.checked;stopAll();step=0}
+  else if(t.id==="sHide")cfg.hide=t.checked;
+  else if(t.id==="sAuto")cfg.auto=t.checked;
+  else if(t.id==="sShuffle"){cfg.shuffle=t.checked;cfg.seed=Math.floor(Math.random()*1e9);build()}
+  else if(t.id==="sShuffleYears"){cfg.shuffleYears=t.checked;cfg.seed=Math.floor(Math.random()*1e9);build()}
+  else if(t.dataset.s!=null){
+    const k=Number(t.dataset.s);
+    if(t.checked)delete cfg.skip[k];else cfg.skip[k]=true;
+    if(!SONGS.some((s,i)=>inPlay(i))){delete cfg.skip[k];t.checked=true;return}
+    refilter();
+  }
+  else if(t.name==="from")cfg.from=t.value;
+  else if(t.name==="skipIn")cfg.skipIn=Number(t.value);
+  else if(t.dataset.g!=null){
+    cfg.genres[Number(t.dataset.g)]=t.checked;
+    if(!cfg.genres.some(Boolean)){cfg.genres[Number(t.dataset.g)]=true;t.checked=true;return}
+    refilter();
+  }
+  else if(t.id==="clientId")cfg.clientId=t.value.trim();
+  save();render();
+});
+$("spConnect").onclick=()=>{
+  cfg.clientId=$("clientId").value.trim();save();
+  if(!cfg.clientId){$("spStatus").textContent="Paste the Client ID first.";return}
+  if(!(window.crypto&&crypto.subtle)){$("spStatus").textContent="Spotify sign-in needs this page on an https address.";return}
+  spLogin();
+};
+$("plFetch").onclick=async()=>{
+  $("plStatus").textContent="Loading your playlists…";
+  try{
+    const list=await plList();
+    if(!list.length){$("plStatus").textContent="No playlists found on this Spotify account.";return}
+    $("plSel").innerHTML=list.map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("");
+    $("plSel").hidden=false;$("plUse").hidden=false;$("plFetch").hidden=true;
+    $("plStatus").textContent="Pick a playlist you created. Spotify does not share the songs of playlists made by other people.";
+  }catch(e){$("plStatus").textContent=/scope|403/i.test(e.message)?"Disconnect and connect Spotify again so the app can see your playlists.":e.message}
+};
+$("plUse").onclick=async()=>{
+  const sel=$("plSel"),name=sel.options[sel.selectedIndex].text;
+  $("plStatus").textContent="Loading “"+name+"”…";
+  try{await plLoad(sel.value,name);useSource("pl");$("plSel").hidden=true;$("plUse").hidden=true}
+  catch(e){$("plStatus").textContent=/403|404/.test(e.message)?"Spotify would not share that playlist. Pick one you created.":e.message}
+};
+$("plOff").onclick=()=>useSource("built");
+$("spDisconnect").onclick=()=>{stopAll();spLogout();if(SONGS!==BUILTIN)useSource("built");if(cfg.from==="start"){cfg.from="key";save()}renderSettings();render()};
+if("mediaSession" in navigator){
+  const h=(a,f)=>{try{navigator.mediaSession.setActionHandler(a,f)}catch(e){}};
+  h("play",toggle);h("pause",toggle);h("nexttrack",()=>go(1,true));h("previoustrack",()=>go(-1,true));
+}
+
+(async function init(){
+  crimp();build();render();prefetch();
+  const q=new URLSearchParams(location.search);
+  if(q.get("code")||q.get("error")){
+    const code=q.get("code"),verifier=store.get("verifier",null);
+    history.replaceState(null,"",location.pathname);
+    if(code&&verifier&&cfg.clientId){
+      try{await spGrant({grant_type:"authorization_code",code,redirect_uri:REDIRECT,code_verifier:verifier});say("")}
+      catch(e){say(e.message)}
+    }else say("Spotify was not connected.");
+    store.del("verifier");render();
+  }
+})();
+</script>
+</body>
+</html>

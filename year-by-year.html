@@ -176,6 +176,7 @@ ol li{margin:0.3rem 0}
       <button class="btn quiet" id="plFetch">Show my playlists</button>
       <select class="text" id="plSel" hidden style="margin-top:0.6rem" aria-label="Your playlists"></select>
       <button class="btn" id="plUse" hidden>Use this playlist</button>
+      <button class="btn quiet" id="plExport" hidden>Save this playlist as a file</button>
       <button class="btn quiet" id="plOff" hidden>Go back to the built-in songs</button>
     </div>
     <button class="btn quiet" id="spDisconnect" hidden>Disconnect Spotify</button>
@@ -523,7 +524,7 @@ function renderSettings(){
   const on=spReady(),file=location.protocol==="file:";
   $("spSetup").hidden=on;$("spDisconnect").hidden=!on;
   const usingPl=SONGS!==BUILTIN;
-  $("genreBlock").hidden=usingPl;$("plBlock").hidden=!on&&!usingPl;$("plOff").hidden=!usingPl;$("plFetch").hidden=!on;
+  $("genreBlock").hidden=usingPl;$("plBlock").hidden=!on&&!usingPl;$("plOff").hidden=!usingPl;$("plExport").hidden=!usingPl;$("plFetch").hidden=!on;
   $("plStatus").textContent=usingPl?`Playing “${pl.name}”, ${pl.songs.length} songs. Years come from each song’s release date on Spotify, so remasters and compilations can show a later year.`:"The game can run on a playlist you created instead of the built-in songs.";
   $("spStatus").textContent=on?"Connected.":file?"Not connected. Spotify sign-in only works once this page is hosted on a web address; clips work without it.":"Not connected. This is a one-time setup and needs Spotify Premium.";
 }
@@ -602,6 +603,13 @@ $("plUse").onclick=async()=>{
   $("plStatus").textContent="Loading “"+name+"”…";
   try{await plLoad(sel.value,name);useSource("pl");$("plSel").hidden=true;$("plUse").hidden=true}
   catch(e){$("plStatus").textContent=/403|404/.test(e.message)?"Spotify would not share that playlist. Pick one you created.":e.message}
+};
+$("plExport").onclick=()=>{
+  if(!pl)return;
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([JSON.stringify({name:pl.name,songs:pl.songs})],{type:"application/json"}));
+  a.download=(pl.name.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"playlist")+".playlist.json";
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 };
 $("plOff").onclick=()=>useSource("built");
 $("spDisconnect").onclick=()=>{stopAll();spLogout();if(SONGS!==BUILTIN)useSource("built");if(cfg.from==="start"){cfg.from="key";save()}renderSettings();render()};

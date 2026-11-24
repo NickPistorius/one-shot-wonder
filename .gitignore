@@ -2,3 +2,4 @@ node_modules/
 tools/.cache/
 .env
 *.local
+.playwright-mcp/

@@ -22,6 +22,7 @@
   }
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{height:100%;margin:0}
 body{
   background:var(--bg); color:var(--ink);
@@ -258,6 +259,8 @@ function jsonp(url){
   });
 }
 const pvPending={};
+// Deezer links expire within hours, so they are kept for this visit only
+const savePv=()=>store.set("pv",Object.fromEntries(Object.entries(pvCache).filter(([k,v])=>!/dzcdn/.test(v))));
 function findPreview(song){
   const key=keyOf(song);
   if(pvCache[key])return Promise.resolve(pvCache[key]);
@@ -277,7 +280,7 @@ function findPreview(song){
     }
     delete pvPending[key];
     if(!url)throw new Error("No clip found for this song. Skip to the next one.");
-    pvCache[key]=url;store.set("pv",pvCache);return url;
+    pvCache[key]=url;savePv();return url;
   })();
   pvPending[key]=p;return p;
 }
@@ -375,7 +378,7 @@ function say(t){$("msg").textContent=t||""}
 function stopAll(){
   tk++;clearTimers();audio.pause();
   if(now.engine==="sp"&&now.playing)sp("PUT","/me/player/pause").catch(()=>{});
-  now={engine:null,playing:false,paused:false,limit:0};busy=false;
+  now={engine:null,playing:false,paused:false,limit:0};busy=false;$("bar").style.width="0";
 }
 async function start(limit){
   const song=cur(),useSp=spReady()&&(limit===0||cfg.from==="start"),wasSp=now.engine==="sp"&&now.playing;
@@ -426,7 +429,7 @@ function ended(wasClip){
 audio.addEventListener("ended",()=>{if(now.engine==="pv"&&now.playing)ended(now.limit>0)});
 audio.addEventListener("error",()=>{
   if(now.engine!=="pv"||audio.src===SILENT||!audio.src)return;
-  delete pvCache[keyOf(cur())];store.set("pv",pvCache);
+  delete pvCache[keyOf(cur())];savePv();
   if(now.playing||busy){tk++;busy=false;now.playing=false;say("This clip would not play. Tap play to try again.");render()}
 });
 function loop(){
@@ -551,7 +554,7 @@ $("yearNext").onclick=()=>stepYear(1);
 $("yearPrev").onclick=()=>stepYear(-1);
 $("yearSel").onchange=e=>jumpYear(Number(e.target.value),false);
 $("cardSlot").onclick=e=>{if(e.target.closest("#reveal")){revealed=true;render()}};
-$("ladder").onclick=e=>{const b=e.target.closest("button");if(!b||busy)return;step=Number(b.dataset.step);start(LADDER[step])};
+$("ladder").onclick=e=>{const b=e.target.closest("button");if(!b||busy||!cfg.game)return;step=Number(b.dataset.step);start(LADDER[step])};
 $("openSettings").onclick=()=>{renderSettings();$("settings").showModal()};
 $("closeSettings").onclick=()=>$("settings").close();
 $("settings").addEventListener("click",e=>{if(e.target===$("settings"))$("settings").close()});
